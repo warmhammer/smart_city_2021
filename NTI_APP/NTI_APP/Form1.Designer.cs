@@ -31,19 +31,22 @@ namespace NTI_APP
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.toolStripTextBoxMain = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBoxAccount = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBoxStorage = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBoxTimetable = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBoxVideo = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBoxAbout = new System.Windows.Forms.ToolStripTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox4 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox5 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox6 = new System.Windows.Forms.ToolStripTextBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panelHeader.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -55,46 +58,18 @@ namespace NTI_APP
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.menuStrip);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2015, 64);
-            this.panel1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1808, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(207, 64);
-            this.panel2.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 43);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // menuStrip
             // 
             this.menuStrip.BackColor = System.Drawing.SystemColors.Window;
             this.menuStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripTextBox1,
-            this.toolStripTextBox2,
-            this.toolStripTextBox3,
-            this.toolStripTextBox4,
-            this.toolStripTextBox5,
-            this.toolStripTextBox6});
+            this.toolStripTextBoxMain,
+            this.toolStripTextBoxAccount,
+            this.toolStripTextBoxStorage,
+            this.toolStripTextBoxTimetable,
+            this.toolStripTextBoxVideo,
+            this.toolStripTextBoxAbout});
             this.menuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip.Location = new System.Drawing.Point(9, 9);
             this.menuStrip.Name = "menuStrip";
@@ -103,68 +78,129 @@ namespace NTI_APP
             this.menuStrip.Text = "menuStrip2";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
             // 
-            // toolStripTextBox1
+            // toolStripTextBoxMain
             // 
-            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 28);
-            this.toolStripTextBox1.Text = "Главная";
-            this.toolStripTextBox1.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolStripTextBoxMain.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBoxMain.Name = "toolStripTextBoxMain";
+            this.toolStripTextBoxMain.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
+            this.toolStripTextBoxMain.Size = new System.Drawing.Size(100, 28);
+            this.toolStripTextBoxMain.Text = "Главная";
+            this.toolStripTextBoxMain.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // toolStripTextBox2
+            // toolStripTextBoxAccount
             // 
-            this.toolStripTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.toolStripTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripTextBox2.Size = new System.Drawing.Size(200, 28);
-            this.toolStripTextBox2.Text = "Личный кабинет";
-            this.toolStripTextBox2.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolStripTextBoxAccount.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBoxAccount.Name = "toolStripTextBoxAccount";
+            this.toolStripTextBoxAccount.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
+            this.toolStripTextBoxAccount.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripTextBoxAccount.Size = new System.Drawing.Size(200, 28);
+            this.toolStripTextBoxAccount.Text = "Личный кабинет";
+            this.toolStripTextBoxAccount.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // toolStripTextBox3
+            // toolStripTextBoxStorage
             // 
-            this.toolStripTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.toolStripTextBox3.Name = "toolStripTextBox3";
-            this.toolStripTextBox3.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.toolStripTextBox3.Size = new System.Drawing.Size(100, 28);
-            this.toolStripTextBox3.Text = "Склад";
-            this.toolStripTextBox3.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolStripTextBoxStorage.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBoxStorage.Name = "toolStripTextBoxStorage";
+            this.toolStripTextBoxStorage.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
+            this.toolStripTextBoxStorage.Size = new System.Drawing.Size(100, 28);
+            this.toolStripTextBoxStorage.Text = "Склад";
+            this.toolStripTextBoxStorage.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // toolStripTextBox4
+            // toolStripTextBoxTimetable
             // 
-            this.toolStripTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.toolStripTextBox4.Name = "toolStripTextBox4";
-            this.toolStripTextBox4.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.toolStripTextBox4.Size = new System.Drawing.Size(150, 28);
-            this.toolStripTextBox4.Text = "Расписание";
-            this.toolStripTextBox4.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolStripTextBoxTimetable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBoxTimetable.Name = "toolStripTextBoxTimetable";
+            this.toolStripTextBoxTimetable.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
+            this.toolStripTextBoxTimetable.Size = new System.Drawing.Size(150, 28);
+            this.toolStripTextBoxTimetable.Text = "Расписание";
+            this.toolStripTextBoxTimetable.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // toolStripTextBox5
+            // toolStripTextBoxVideo
             // 
-            this.toolStripTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.toolStripTextBox5.Name = "toolStripTextBox5";
-            this.toolStripTextBox5.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.toolStripTextBox5.Size = new System.Drawing.Size(170, 28);
-            this.toolStripTextBox5.Text = "Видео-поток";
-            this.toolStripTextBox5.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolStripTextBoxVideo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBoxVideo.Name = "toolStripTextBoxVideo";
+            this.toolStripTextBoxVideo.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
+            this.toolStripTextBoxVideo.Size = new System.Drawing.Size(170, 28);
+            this.toolStripTextBoxVideo.Text = "Видео-поток";
+            this.toolStripTextBoxVideo.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // toolStripTextBox6
+            // toolStripTextBoxAbout
             // 
-            this.toolStripTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.toolStripTextBox6.Name = "toolStripTextBox6";
-            this.toolStripTextBox6.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.toolStripTextBox6.Size = new System.Drawing.Size(80, 28);
-            this.toolStripTextBox6.Text = "О нас";
-            this.toolStripTextBox6.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolStripTextBoxAbout.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.toolStripTextBoxAbout.Name = "toolStripTextBoxAbout";
+            this.toolStripTextBoxAbout.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
+            this.toolStripTextBoxAbout.Size = new System.Drawing.Size(80, 28);
+            this.toolStripTextBoxAbout.Text = "О нас";
+            this.toolStripTextBoxAbout.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(1808, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(207, 53);
+            this.panel2.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(15, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 32);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.Controls.Add(this.panel2);
+            this.panelHeader.Controls.Add(this.menuStrip);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(2015, 53);
+            this.panelHeader.TabIndex = 2;
+            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 59);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(2015, 862);
+            this.tableLayoutPanel1.TabIndex = 3;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(761, 343);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(492, 175);
+            this.tableLayoutPanel2.TabIndex = 0;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(2015, 913);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(2015, 921);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -172,27 +208,30 @@ namespace NTI_APP
             this.Text = "Система автоматического склада";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox3;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox4;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox5;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox6;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxMain;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxAccount;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxStorage;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxTimetable;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxVideo;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxAbout;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelHeader;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
 
