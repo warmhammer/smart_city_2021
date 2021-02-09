@@ -1,0 +1,16 @@
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\bin\Debug\netcoreapp3.1\NTI_APP.exe
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\bin\Debug\netcoreapp3.1\NTI_APP.deps.json
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\bin\Debug\netcoreapp3.1\NTI_APP.runtimeconfig.json
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\bin\Debug\netcoreapp3.1\NTI_APP.runtimeconfig.dev.json
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\bin\Debug\netcoreapp3.1\NTI_APP.dll
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\bin\Debug\netcoreapp3.1\NTI_APP.pdb
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.csprojAssemblyReference.cache
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.Properties.Resources.resources
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.csproj.GenerateResource.cache
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.AssemblyInfoInputs.cache
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.AssemblyInfo.cs
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.csproj.CoreCompileInputs.cache
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.dll
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.pdb
+C:\Users\maxpo\source\repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.genruntimeconfig.cache
+C:\Users\maxpo\Source\Repos\warmhammer\smart_city_2021\NTI_APP\NTI_APP\obj\Debug\netcoreapp3.1\NTI_APP.MainForm.resources

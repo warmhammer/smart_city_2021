@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maxpo\\source\\repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\NTI_APP.csproj": {}
+    "C:\\Users\\maxpo\\Source\\Repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\NTI_APP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maxpo\\source\\repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\NTI_APP.csproj": {
+    "C:\\Users\\maxpo\\Source\\Repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\NTI_APP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maxpo\\source\\repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\NTI_APP.csproj",
+        "projectUniqueName": "C:\\Users\\maxpo\\Source\\Repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\NTI_APP.csproj",
         "projectName": "NTI_APP",
-        "projectPath": "C:\\Users\\maxpo\\source\\repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\NTI_APP.csproj",
+        "projectPath": "C:\\Users\\maxpo\\Source\\Repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\NTI_APP.csproj",
         "packagesPath": "C:\\Users\\maxpo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maxpo\\source\\repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\obj\\",
+        "outputPath": "C:\\Users\\maxpo\\Source\\Repos\\warmhammer\\smart_city_2021\\NTI_APP\\NTI_APP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maxpo\\AppData\\Roaming\\NuGet\\NuGet.Config",
