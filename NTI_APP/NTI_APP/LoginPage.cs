@@ -12,9 +12,9 @@ namespace NTI_APP
 {
     public partial class LoginPage : System.Windows.Forms.TableLayoutPanel
     {
-        public LoginPage(System.ComponentModel.ComponentResourceManager resources)
+        public LoginPage()
         {
-            InitializeComponent(resources);
+            InitializeComponent();
         }
 
         private void linkLabelRegistration_Click(object sender, EventArgs e)

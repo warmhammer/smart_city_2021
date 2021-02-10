@@ -3,8 +3,10 @@ namespace NTI_APP
 {
     partial class LoginPage
     {
-        private void InitializeComponent(System.ComponentModel.ComponentResourceManager resources)
-        { 
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
             this.labelLogin = new System.Windows.Forms.Label();
             this.panelMail = new System.Windows.Forms.Panel();
             this.textBoxMail = new System.Windows.Forms.TextBox();
