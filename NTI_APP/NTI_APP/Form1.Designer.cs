@@ -311,8 +311,7 @@ namespace NTI_APP
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(2015, 921);
             this.Controls.Add(this.tableLayoutPanel1);
