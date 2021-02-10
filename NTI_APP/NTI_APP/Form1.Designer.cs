@@ -186,6 +186,8 @@ namespace NTI_APP
             this.tableLayoutPanel2.Controls.Add(this.linkLabel2, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.button2, 1, 3);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(787, 271);
+            this.tableLayoutPanel2.MaximumSize = new System.Drawing.Size(440, 320);
+            this.tableLayoutPanel2.MinimumSize = new System.Drawing.Size(440, 320);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
