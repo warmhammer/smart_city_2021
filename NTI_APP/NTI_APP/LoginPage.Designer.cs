@@ -1,4 +1,5 @@
-﻿
+﻿using System.Drawing;
+
 namespace NTI_APP
 {
     partial class LoginPage
@@ -63,7 +64,9 @@ namespace NTI_APP
             // panelMail
             // 
             this.panelMail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panelMail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMail.BackgroundImage")));
+
+            this.panelMail.BackgroundImage = new Bitmap(@"..\..\..\..\NTI_APP\Resources\textBox.png");
+            //this.panelMail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMail.BackgroundImage")));
             this.panelMail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.SetColumnSpan(this.panelMail, 2);
             this.panelMail.Controls.Add(this.textBoxMail);
@@ -87,7 +90,8 @@ namespace NTI_APP
             // 
             // panelPassword
             // 
-            this.panelPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelPassword.BackgroundImage")));
+            this.panelPassword.BackgroundImage = new Bitmap(@"..\..\..\..\NTI_APP\Resources\textBox.png");
+            //this.panelPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelPassword.BackgroundImage")));
             this.panelPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.SetColumnSpan(this.panelPassword, 2);
             this.panelPassword.Controls.Add(this.textBoxPassword);
@@ -151,9 +155,8 @@ namespace NTI_APP
 
 
             //this.buttonEnter.Image = new Bitmap(Properties.Resources.buttonEnter);
-
-            
-            this.buttonEnter.Image = ((System.Drawing.Image)(resources.GetObject("textBox"))); //(".\Resources\);"buttonEnter.Image"
+            this.buttonEnter.Image = new Bitmap(@"..\..\..\..\NTI_APP\Resources\enterButton.png");
+            //this.buttonEnter.Image = ((System.Drawing.Image)(resources.GetObject("textBox"))); //(".\Resources\);"buttonEnter.Image"
             
 
             this.buttonEnter.Location = new System.Drawing.Point(325, 240);
