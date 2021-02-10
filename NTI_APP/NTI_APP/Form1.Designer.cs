@@ -32,6 +32,12 @@ namespace NTI_APP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItemMain = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemAccount = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemStorage = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemTimetable = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemVideo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panelHeader = new System.Windows.Forms.Panel();
@@ -45,12 +51,6 @@ namespace NTI_APP
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.button2 = new System.Windows.Forms.Button();
-            this.toolStripMenuItemMain = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemAccount = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemStorage = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemTimetable = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemVideo = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelHeader.SuspendLayout();
@@ -88,6 +88,42 @@ namespace NTI_APP
             this.menuStrip.TabIndex = 3;
             this.menuStrip.Text = "menuStrip2";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
+            // 
+            // toolStripMenuItemMain
+            // 
+            this.toolStripMenuItemMain.Name = "toolStripMenuItemMain";
+            this.toolStripMenuItemMain.Size = new System.Drawing.Size(108, 34);
+            this.toolStripMenuItemMain.Text = "Главная";
+            // 
+            // toolStripMenuItemAccount
+            // 
+            this.toolStripMenuItemAccount.Name = "toolStripMenuItemAccount";
+            this.toolStripMenuItemAccount.Size = new System.Drawing.Size(191, 34);
+            this.toolStripMenuItemAccount.Text = "Личный кабинет";
+            // 
+            // toolStripMenuItemStorage
+            // 
+            this.toolStripMenuItemStorage.Name = "toolStripMenuItemStorage";
+            this.toolStripMenuItemStorage.Size = new System.Drawing.Size(87, 34);
+            this.toolStripMenuItemStorage.Text = "Склад";
+            // 
+            // toolStripMenuItemTimetable
+            // 
+            this.toolStripMenuItemTimetable.Name = "toolStripMenuItemTimetable";
+            this.toolStripMenuItemTimetable.Size = new System.Drawing.Size(144, 34);
+            this.toolStripMenuItemTimetable.Text = "Расписание";
+            // 
+            // toolStripMenuItemVideo
+            // 
+            this.toolStripMenuItemVideo.Name = "toolStripMenuItemVideo";
+            this.toolStripMenuItemVideo.Size = new System.Drawing.Size(152, 34);
+            this.toolStripMenuItemVideo.Text = "Видео-поток";
+            // 
+            // toolStripMenuItemAbout
+            // 
+            this.toolStripMenuItemAbout.Name = "toolStripMenuItemAbout";
+            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(86, 34);
+            this.toolStripMenuItemAbout.Text = "О нас";
             // 
             // panel2
             // 
@@ -268,42 +304,6 @@ namespace NTI_APP
             this.button2.TabIndex = 6;
             this.button2.UseMnemonic = false;
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // toolStripMenuItemMain
-            // 
-            this.toolStripMenuItemMain.Name = "toolStripMenuItemMain";
-            this.toolStripMenuItemMain.Size = new System.Drawing.Size(108, 34);
-            this.toolStripMenuItemMain.Text = "Главная";
-            // 
-            // toolStripMenuItemAccount
-            // 
-            this.toolStripMenuItemAccount.Name = "toolStripMenuItemAccount";
-            this.toolStripMenuItemAccount.Size = new System.Drawing.Size(191, 34);
-            this.toolStripMenuItemAccount.Text = "Личный кабинет";
-            // 
-            // toolStripMenuItemStorage
-            // 
-            this.toolStripMenuItemStorage.Name = "toolStripMenuItemStorage";
-            this.toolStripMenuItemStorage.Size = new System.Drawing.Size(87, 34);
-            this.toolStripMenuItemStorage.Text = "Склад";
-            // 
-            // toolStripMenuItemTimetable
-            // 
-            this.toolStripMenuItemTimetable.Name = "toolStripMenuItemTimetable";
-            this.toolStripMenuItemTimetable.Size = new System.Drawing.Size(144, 34);
-            this.toolStripMenuItemTimetable.Text = "Расписание";
-            // 
-            // toolStripMenuItemVideo
-            // 
-            this.toolStripMenuItemVideo.Name = "toolStripMenuItemVideo";
-            this.toolStripMenuItemVideo.Size = new System.Drawing.Size(152, 34);
-            this.toolStripMenuItemVideo.Text = "Видео-поток";
-            // 
-            // toolStripMenuItemAbout
-            // 
-            this.toolStripMenuItemAbout.Name = "toolStripMenuItemAbout";
-            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(86, 34);
-            this.toolStripMenuItemAbout.Text = "О нас";
             // 
             // MainForm
             // 
