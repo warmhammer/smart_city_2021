@@ -50,6 +50,7 @@ namespace NTI_APP
             // 
             // EnteryLabel
             // 
+            this.EnteryLabel.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.EnteryLabel, 2);
             this.EnteryLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EnteryLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -62,7 +63,6 @@ namespace NTI_APP
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -125,7 +125,7 @@ namespace NTI_APP
             this.textBoxPassword.Location = new System.Drawing.Point(23, 22);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PlaceholderText = "Пароль";
-            this.textBoxPassword.Size = new System.Drawing.Size(233, 26);
+            this.textBoxPassword.Size = new System.Drawing.Size(360, 26);
             this.textBoxPassword.TabIndex = 1;
             // 
             // panel1
@@ -150,7 +150,7 @@ namespace NTI_APP
             this.textBoxEmail.Location = new System.Drawing.Point(23, 19);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.PlaceholderText = "Почта";
-            this.textBoxEmail.Size = new System.Drawing.Size(248, 26);
+            this.textBoxEmail.Size = new System.Drawing.Size(360, 26);
             this.textBoxEmail.TabIndex = 2;
             // 
             // linkRegistration
@@ -172,11 +172,12 @@ namespace NTI_APP
             // linkWastePassword
             // 
             this.linkWastePassword.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkWastePassword.AutoSize = true;
             this.linkWastePassword.Dock = System.Windows.Forms.DockStyle.Top;
             this.linkWastePassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.linkWastePassword.LinkColor = System.Drawing.Color.Black;
-            this.linkWastePassword.Location = new System.Drawing.Point(3, 209);
-            this.linkWastePassword.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.linkWastePassword.Location = new System.Drawing.Point(3, 204);
+            this.linkWastePassword.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.linkWastePassword.Name = "linkWastePassword";
             this.linkWastePassword.Size = new System.Drawing.Size(206, 15);
             this.linkWastePassword.TabIndex = 4;
