@@ -14,8 +14,6 @@ namespace NTI_APP
     {
         public MainForm()
         {
-            
-            this.loginPage = new LoginPage();
             this.userControl = new PageLogin();
             InitializeComponent();
         }
