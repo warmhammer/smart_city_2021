@@ -168,7 +168,6 @@ namespace NTI_APP
             // linkWastePassword
             // 
             this.linkWastePassword.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkWastePassword.AutoSize = true;
             this.linkWastePassword.Dock = System.Windows.Forms.DockStyle.Top;
             this.linkWastePassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.linkWastePassword.LinkColor = System.Drawing.Color.Black;
@@ -181,6 +180,7 @@ namespace NTI_APP
             this.linkWastePassword.Text = "ЗАБЫЛИ ПАРОЛЬ?";
             this.linkWastePassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.linkWastePassword.VisitedLinkColor = System.Drawing.Color.Black;
+            this.linkWastePassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkWastePassword_LinkClicked);
             // 
             // PageLogin
             // 
