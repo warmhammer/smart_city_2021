@@ -230,7 +230,8 @@ namespace NTI_APP
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPagePlace;
         private System.Windows.Forms.GroupBox groupBox2;
 
-        private PageLogin userControl;
+        private PageLogin pageLogin;
+        private PageAbout pageAbout;
     }
 }
 

@@ -14,7 +14,8 @@ namespace NTI_APP
     {
         public MainForm()
         {
-            this.userControl = new PageLogin();
+            this.pageLogin = new PageLogin();
+            this.pageAbout = new PageAbout();
             InitializeComponent();
         }
 
@@ -35,9 +36,16 @@ namespace NTI_APP
             if (e.ClickedItem == toolStripMenuItemAccount)
             {
                 this.tableLayoutPanelPagePlace.Controls.Clear();
-                this.userControl.Dock = System.Windows.Forms.DockStyle.None;
-                this.userControl.Anchor = System.Windows.Forms.AnchorStyles.None;
-                this.tableLayoutPanelPagePlace.Controls.Add(this.userControl, 0, 0);
+                this.pageLogin.Dock = System.Windows.Forms.DockStyle.None;
+                this.pageLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+                this.tableLayoutPanelPagePlace.Controls.Add(this.pageLogin, 0, 0);
+            }
+            if (e.ClickedItem == toolStripMenuItemAbout)
+            {
+                this.tableLayoutPanelPagePlace.Controls.Clear();
+                this.pageAbout.Dock = System.Windows.Forms.DockStyle.None;
+                this.pageAbout.Anchor = System.Windows.Forms.AnchorStyles.None;
+                this.tableLayoutPanelPagePlace.Controls.Add(this.pageAbout, 0, 0);
             }
         }
 
