@@ -117,6 +117,7 @@ namespace NTI_APP
             // 
             // textBoxPassword
             // 
+            this.textBoxPassword.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBoxPassword.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -140,6 +141,7 @@ namespace NTI_APP
             // 
             // textBoxEmail
             // 
+            this.textBoxEmail.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBoxEmail.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
