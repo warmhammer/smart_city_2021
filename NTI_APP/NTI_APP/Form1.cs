@@ -16,7 +16,7 @@ namespace NTI_APP
         {
             
             this.loginPage = new LoginPage();
-
+            this.userControl = new PageLogin();
             InitializeComponent();
         }
 
@@ -37,7 +37,7 @@ namespace NTI_APP
             if (e.ClickedItem == toolStripMenuItemAccount)
             {
                 this.tableLayoutPanelPagePlace.Controls.Clear();
-                this.tableLayoutPanelPagePlace.Controls.Add(this.loginPage, 0, 0);
+                this.tableLayoutPanelPagePlace.Controls.Add(this.userControl, 0, 0);
             }
         }
 
