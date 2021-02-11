@@ -84,9 +84,6 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="panel2.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAaEAAAA6CAYAAAAZfub2AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAZ
@@ -116,9 +113,6 @@
         rdlNLzzb0CBJerkYr2kyYLZD6DCeVxk8j5Uk/wPvX+PJ1SuhagAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="textBoxPassword.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAaEAAAA6CAYAAAAZfub2AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAZ
@@ -148,9 +142,6 @@
         rdlNLzzb0CBJerkYr2kyYLZD6DCeVxk8j5Uk/wPvX+PJ1SuhagAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="textBoxEmail.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <metadata name="$this.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
