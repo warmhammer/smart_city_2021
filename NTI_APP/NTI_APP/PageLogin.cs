@@ -32,5 +32,10 @@ namespace NTI_APP
         {
 
         }
+
+        private void linkRegistration_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegistrationLinkClicked.Invoke(sender, e);
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace NTI_APP
 {
@@ -14,8 +15,19 @@ namespace NTI_APP
     {
         public MainForm()
         {
+            this.pageRegistration = new PageRegistration();
             this.pageLogin = new PageLogin();
+            this.pageLogin.RegistrationLinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.pageLoginRegistration_Click);
+
+
             this.pageAbout = new PageAbout();
+
+            //ProcessStartInfo procInfo = new ProcessStartInfo(@"C:/Program Files (x86)/Real Games/Factory IO/Factory IO.exe");
+            //procInfo.UseShellExecute = true;
+            //procInfo.FileName = "C:/Program Files (x86)/Real Games/Factory IO/Scenes/Automated Warehouse.factoryio";
+
+            //Process.Start(procInfo);
+
             InitializeComponent();
         }
 
@@ -47,6 +59,14 @@ namespace NTI_APP
                 this.pageAbout.Anchor = System.Windows.Forms.AnchorStyles.None;
                 this.tableLayoutPanelPagePlace.Controls.Add(this.pageAbout, 0, 0);
             }
+        }
+
+        private void pageLoginRegistration_Click(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.tableLayoutPanelPagePlace.Controls.Clear();
+            this.pageRegistration.Dock = System.Windows.Forms.DockStyle.None;
+            this.pageRegistration.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanelPagePlace.Controls.Add(this.pageRegistration, 0, 0);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

@@ -232,6 +232,7 @@ namespace NTI_APP
 
         private PageLogin pageLogin;
         private PageAbout pageAbout;
+        private PageRegistration pageRegistration;
     }
 }
 

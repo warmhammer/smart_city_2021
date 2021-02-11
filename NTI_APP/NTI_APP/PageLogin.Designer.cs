@@ -125,7 +125,7 @@ namespace NTI_APP
             this.textBoxPassword.Location = new System.Drawing.Point(23, 10);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PlaceholderText = "Пароль";
-            this.textBoxPassword.Size = new System.Drawing.Size(360, 26);
+            this.textBoxPassword.Size = new System.Drawing.Size(360, 45);
             this.textBoxPassword.TabIndex = 1;
             // 
             // linkRegistration
@@ -142,6 +142,7 @@ namespace NTI_APP
             this.linkRegistration.Text = "РЕГИСТРАЦИЯ";
             this.linkRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.linkRegistration.VisitedLinkColor = System.Drawing.Color.Black;
+            this.linkRegistration.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegistration_LinkClicked);
             // 
             // panelMail
             // 
@@ -165,7 +166,7 @@ namespace NTI_APP
             this.textBoxEmail.Location = new System.Drawing.Point(23, 10);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.PlaceholderText = "Почта";
-            this.textBoxEmail.Size = new System.Drawing.Size(360, 26);
+            this.textBoxEmail.Size = new System.Drawing.Size(360, 45);
             this.textBoxEmail.TabIndex = 2;
             // 
             // linkForgotPassword
@@ -216,5 +217,7 @@ namespace NTI_APP
         private System.Windows.Forms.Button EnteryButton;
         private System.Windows.Forms.LinkLabel linkForgotPassword;
         private System.Windows.Forms.LinkLabel linkRegistration;
+
+        public System.Windows.Forms.LinkLabelLinkClickedEventHandler RegistrationLinkClicked;
     }
 }

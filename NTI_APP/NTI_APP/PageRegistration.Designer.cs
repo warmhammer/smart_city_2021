@@ -63,8 +63,8 @@ namespace NTI_APP
             // 
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.66667F));
             this.tableLayoutPanel1.Controls.Add(this.EnteryButton, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.panelPassword, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.EnteryLabel, 0, 0);
@@ -123,7 +123,7 @@ namespace NTI_APP
             this.textBoxPassword.Location = new System.Drawing.Point(23, 10);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PlaceholderText = "Пароль";
-            this.textBoxPassword.Size = new System.Drawing.Size(360, 26);
+            this.textBoxPassword.Size = new System.Drawing.Size(360, 45);
             this.textBoxPassword.TabIndex = 1;
             // 
             // panelMail
@@ -148,7 +148,7 @@ namespace NTI_APP
             this.textBoxEmail.Location = new System.Drawing.Point(23, 10);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.PlaceholderText = "Почта";
-            this.textBoxEmail.Size = new System.Drawing.Size(360, 26);
+            this.textBoxEmail.Size = new System.Drawing.Size(360, 45);
             this.textBoxEmail.TabIndex = 2;
             // 
             // linkForgotPassword
@@ -161,9 +161,9 @@ namespace NTI_APP
             this.linkForgotPassword.LinkColor = System.Drawing.Color.Black;
             this.linkForgotPassword.Location = new System.Drawing.Point(3, 210);
             this.linkForgotPassword.Name = "linkForgotPassword";
-            this.linkForgotPassword.Padding = new System.Windows.Forms.Padding(0, 31, 0, 0);
+            this.linkForgotPassword.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
             this.tableLayoutPanel1.SetRowSpan(this.linkForgotPassword, 2);
-            this.linkForgotPassword.Size = new System.Drawing.Size(206, 80);
+            this.linkForgotPassword.Size = new System.Drawing.Size(241, 80);
             this.linkForgotPassword.TabIndex = 4;
             this.linkForgotPassword.TabStop = true;
             this.linkForgotPassword.Text = "ВЕРНУТЬСЯ КО ВХОДУ";
