@@ -36,50 +36,56 @@ namespace NTI_APP
 
         private void label6_Click(object sender, EventArgs e)
         {
-            //var url = "mailto:someone@somewhere.com";
-            //Process.Start(url);
-            //"mailto:" + to + "&SUBJECT=" + subject + "?BODY=" + body + "&Attachment=" + attachment
-            //System.Diagnostics.Process.Start("mailto:bla@bla.bla");
+            //TODO
+            ProcessStartInfo procInfo = new ProcessStartInfo(@"mailto:info@mail.ru");
 
-            //string subject = "Test subject";
-            //string emailTag = string.Format("mailto:someone@test.com?subject={0}", subject);
-            //System.Diagnostics.Process.Start(emailTag);
+            procInfo.UseShellExecute = true;
+            Process.Start(procInfo);
+        }
 
-            string target = "http://www.microsoft.com";
-            //Use no more than one assignment when you test this code.
-            //string target = "ftp://ftp.microsoft.com";
-            //string target = "C:\\Program Files\\Microsoft Visual Studio\\INSTALL.HTM";
-            try
-            {
-                System.Diagnostics.Process.Start(target);
-            }
-            catch (System.ComponentModel.Win32Exception noBrowser)
-            {
-                if (noBrowser.ErrorCode == -2147467259)
-                    MessageBox.Show(noBrowser.Message);
-            }
-            catch (System.Exception other)
-            {
-                MessageBox.Show(other.Message);
-            }
+        private void labelMail2_Click(object sender, EventArgs e)
+        {
+            //TODO
+            ProcessStartInfo procInfo = new ProcessStartInfo(@"mailto:info@mail.ru");
 
-            /*
-            var mailMessage = new MailMessage();
-            mailMessage.From = new MailAddress("someone@yourdomain.com");
-            mailMessage.Subject = "Your subject here";
-            mailMessage.IsBodyHtml = true;
-            mailMessage.Body = "<span style='font-size: 12pt; color: red;'>My HTML formatted body</span>";
+            procInfo.UseShellExecute = true;
+            Process.Start(procInfo);
+        }
 
-            mailMessage.Attachments.Add(new Attachment("C://Myfile.pdf"));
+        private void labelAddress1_Click(object sender, EventArgs e)
+        {
+            //TODO
+            ProcessStartInfo procInfo = new ProcessStartInfo(@"https://yandex.ru/maps/213/moscow/search/г.Караганда, ул.Гоголя, 34А/");
 
-            var filename = "C://Temp/mymessage.eml";
+            procInfo.UseShellExecute = true;
+            Process.Start(procInfo);
+        }
 
-            //save the MailMessage to the filesystem
-            mailMessage.Save(filename);
+        private void labelAddress2_Click(object sender, EventArgs e)
+        {
+            //TODO
+            ProcessStartInfo procInfo = new ProcessStartInfo(@"https://yandex.ru/maps/213/moscow/search/г.Караганда, ул.Гоголя, 34А/");
 
-            //Open the file with the default associated application registered on the local machine
-            Process.Start(mailMessage);
-            */
+            procInfo.UseShellExecute = true;
+            Process.Start(procInfo);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            //TODO
+            ProcessStartInfo procInfo = new ProcessStartInfo(@"ms-phone:8-(999)-999-99-99");
+
+            procInfo.UseShellExecute = true;
+            Process.Start(procInfo);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            //TODO
+            ProcessStartInfo procInfo = new ProcessStartInfo(@"ms-phone:8-(999)-999-99-99");
+
+            procInfo.UseShellExecute = true;
+            Process.Start(procInfo);
         }
     }
 }

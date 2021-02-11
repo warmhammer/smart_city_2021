@@ -221,6 +221,7 @@ namespace NTI_APP
             this.label4.Size = new System.Drawing.Size(192, 65);
             this.label4.TabIndex = 6;
             this.label4.Text = "Отдел продаж:\r\n+7-(999)-999-99-99";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -232,6 +233,7 @@ namespace NTI_APP
             this.label5.Size = new System.Drawing.Size(342, 65);
             this.label5.TabIndex = 7;
             this.label5.Text = "Отдел по работе с подрядчиками:\r\n+7-(999)-999-99-99\r\n";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // labelMail1
             // 
@@ -255,6 +257,7 @@ namespace NTI_APP
             this.labelMail2.Size = new System.Drawing.Size(165, 65);
             this.labelMail2.TabIndex = 9;
             this.labelMail2.Text = "Оптовый отдел:\r\ninfo@mail.ru";
+            this.labelMail2.Click += new System.EventHandler(this.labelMail2_Click);
             // 
             // labelAddress1
             // 
@@ -263,9 +266,10 @@ namespace NTI_APP
             this.labelAddress1.ForeColor = System.Drawing.Color.DimGray;
             this.labelAddress1.Location = new System.Drawing.Point(165, 525);
             this.labelAddress1.Name = "labelAddress1";
-            this.labelAddress1.Size = new System.Drawing.Size(456, 65);
+            this.labelAddress1.Size = new System.Drawing.Size(285, 65);
             this.labelAddress1.TabIndex = 10;
-            this.labelAddress1.Text = "Офис:\r\nг. Караганда, ул. Академика Пилюлькина, д.13";
+            this.labelAddress1.Text = "Офис:\r\nг. Караганда, ул. Гоголя, 34А";
+            this.labelAddress1.Click += new System.EventHandler(this.labelAddress1_Click);
             // 
             // labelAddress2
             // 
@@ -274,9 +278,10 @@ namespace NTI_APP
             this.labelAddress2.ForeColor = System.Drawing.Color.DimGray;
             this.labelAddress2.Location = new System.Drawing.Point(165, 590);
             this.labelAddress2.Name = "labelAddress2";
-            this.labelAddress2.Size = new System.Drawing.Size(450, 65);
+            this.labelAddress2.Size = new System.Drawing.Size(285, 65);
             this.labelAddress2.TabIndex = 11;
-            this.labelAddress2.Text = "Склад:\r\nг. Карагадна, ул. Генерала Свистулькина, д.12\r\n";
+            this.labelAddress2.Text = "Склад:\r\nг. Караганда, ул. Гоголя, 34А";
+            this.labelAddress2.Click += new System.EventHandler(this.labelAddress2_Click);
             // 
             // PageAbout
             // 
