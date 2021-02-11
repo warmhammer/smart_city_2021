@@ -37,6 +37,8 @@ namespace NTI_APP
             if (e.ClickedItem == toolStripMenuItemAccount)
             {
                 this.tableLayoutPanelPagePlace.Controls.Clear();
+                this.userControl.Dock = System.Windows.Forms.DockStyle.None;
+                this.userControl.Anchor = System.Windows.Forms.AnchorStyles.None;
                 this.tableLayoutPanelPagePlace.Controls.Add(this.userControl, 0, 0);
             }
         }
