@@ -13,9 +13,44 @@ namespace NTI_APP
     {
         public PageTimetable(MySqlConnection conn)
         {
-            this.conn = conn;
-
             InitializeComponent();
+
+            this.conn = conn;
+           
+
+            //string connection = "server=localhost;database=adil;user=root;password=";
+            //MySqlConnection con = new MySqlConnection(connection);
+            ////con.Open();
+            MySqlCommand command = new MySqlCommand();
+
+            command.Connection = conn;
+            MySqlDataAdapter MyDA = new MySqlDataAdapter();
+            string sqlSelectAll = "SELECT * from ID_Factory";
+            MyDA.SelectCommand = new MySqlCommand(sqlSelectAll, conn);
+
+            DataTable table = new DataTable();
+            MyDA.Fill(table);
+
+            BindingSource bSource = new BindingSource();
+            bSource.DataSource = table;
+
+
+            dataGridView.DataSource = bSource;
+            
+      
         }
-    }
+
+        
+
+        
+
+
+
+
+
+
+
+
+}
+
 }
