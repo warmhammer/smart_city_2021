@@ -234,11 +234,13 @@ namespace NTI_APP
 
         private PageLogin pageLogin;
         private PageRegistration pageRegistration;
-        private PageMain pageMain;
+        private PageAccount pageAccount;
 
+        private PageMain pageMain;
         private PageAbout pageAbout;
         private PageVideo pageVideo;
-        
+
+        private bool loginFlag = false;
 
         private System.Diagnostics.Process factoryIOProcess;
     }

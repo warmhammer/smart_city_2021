@@ -201,5 +201,7 @@ namespace NTI_APP
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.Button EnteryButton;
         private System.Windows.Forms.LinkLabel linkForgotPassword;
+
+        public System.Windows.Forms.LinkLabelLinkClickedEventHandler LoginLinkClicked;
     }
 }

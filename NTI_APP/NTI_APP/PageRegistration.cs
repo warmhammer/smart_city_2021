@@ -30,7 +30,7 @@ namespace NTI_APP
 
         private void linkWastePassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            LoginLinkClicked.Invoke(sender, e);
         }
     }
 }

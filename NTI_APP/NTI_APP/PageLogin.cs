@@ -37,5 +37,18 @@ namespace NTI_APP
         {
             RegistrationLinkClicked.Invoke(sender, e);
         }
+
+        private void EnteryButton_Click(object sender, EventArgs e)
+        {
+            //Nikite suda
+
+            string email = textBoxEmail.Text;
+            string password = textBoxPassword.Text;
+
+            //Success
+            EnterSuccess.Invoke(sender, e);
+
+            //Failure
+        }
     }
 }

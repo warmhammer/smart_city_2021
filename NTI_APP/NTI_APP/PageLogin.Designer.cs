@@ -102,6 +102,7 @@ namespace NTI_APP
             this.EnteryButton.Size = new System.Drawing.Size(95, 71);
             this.EnteryButton.TabIndex = 2;
             this.EnteryButton.UseVisualStyleBackColor = false;
+            this.EnteryButton.Click += new System.EventHandler(this.EnteryButton_Click);
             // 
             // panelPassword
             // 
@@ -133,6 +134,7 @@ namespace NTI_APP
             this.linkRegistration.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
             this.linkRegistration.AutoSize = true;
             this.linkRegistration.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.linkRegistration.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkRegistration.LinkColor = System.Drawing.Color.Black;
             this.linkRegistration.Location = new System.Drawing.Point(3, 250);
             this.linkRegistration.Name = "linkRegistration";
@@ -175,6 +177,7 @@ namespace NTI_APP
             this.linkForgotPassword.AutoSize = true;
             this.linkForgotPassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.linkForgotPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.linkForgotPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkForgotPassword.LinkColor = System.Drawing.Color.Black;
             this.linkForgotPassword.Location = new System.Drawing.Point(3, 210);
             this.linkForgotPassword.Name = "linkForgotPassword";
@@ -219,5 +222,6 @@ namespace NTI_APP
         private System.Windows.Forms.LinkLabel linkRegistration;
 
         public System.Windows.Forms.LinkLabelLinkClickedEventHandler RegistrationLinkClicked;
+        public System.EventHandler EnterSuccess;
     }
 }

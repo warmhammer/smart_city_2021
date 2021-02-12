@@ -17,10 +17,13 @@ namespace NTI_APP
         {
             this.factoryIOProcess = factoryIOProcess;
 
-
-            this.pageRegistration = new PageRegistration();
             this.pageLogin = new PageLogin();
             this.pageLogin.RegistrationLinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.pageLoginRegistration_Click);
+            this.pageLogin.EnterSuccess += new System.EventHandler(this.pageLoginEnterSuccess);
+            this.pageAccount = new PageAccount();
+
+            this.pageRegistration = new PageRegistration();
+            this.pageRegistration.LoginLinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.pageRegistrationLogin_Click);
 
 
             this.pageMain = new PageMain();
@@ -32,10 +35,6 @@ namespace NTI_APP
 
         ~MainForm()
         {
-            factoryIOProcess.Kill();
-            factoryIOProcess.WaitForExit();
-
-            MessageBox.Show("Factory I/O");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,10 +60,20 @@ namespace NTI_APP
             }
             if (e.ClickedItem == toolStripMenuItemAccount)
             {
-                this.tableLayoutPanelPagePlace.Controls.Clear();
-                this.pageLogin.Dock = System.Windows.Forms.DockStyle.None;
-                this.pageLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-                this.tableLayoutPanelPagePlace.Controls.Add(this.pageLogin, 0, 0);
+                if (!loginFlag)
+                {
+                    this.tableLayoutPanelPagePlace.Controls.Clear();
+                    this.pageLogin.Dock = System.Windows.Forms.DockStyle.None;
+                    this.pageLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+                    this.tableLayoutPanelPagePlace.Controls.Add(this.pageLogin, 0, 0);
+                }
+                else
+                {
+                    this.tableLayoutPanelPagePlace.Controls.Clear();
+                    this.pageAccount.Dock = System.Windows.Forms.DockStyle.None;
+                    this.pageAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
+                    this.tableLayoutPanelPagePlace.Controls.Add(this.pageAccount, 0, 0);
+                }
             }
             if (e.ClickedItem == toolStripMenuItemAbout)
             {
@@ -88,6 +97,24 @@ namespace NTI_APP
             this.pageRegistration.Dock = System.Windows.Forms.DockStyle.None;
             this.pageRegistration.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanelPagePlace.Controls.Add(this.pageRegistration, 0, 0);
+        }
+
+        private void pageLoginEnterSuccess(object sender, EventArgs e)
+        {
+            loginFlag = true; 
+
+            this.tableLayoutPanelPagePlace.Controls.Clear();
+            this.pageAccount.Dock = System.Windows.Forms.DockStyle.None;
+            this.pageAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanelPagePlace.Controls.Add(this.pageAccount, 0, 0);
+        }
+
+        private void pageRegistrationLogin_Click(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.tableLayoutPanelPagePlace.Controls.Clear();
+            this.pageLogin.Dock = System.Windows.Forms.DockStyle.None;
+            this.pageLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanelPagePlace.Controls.Add(this.pageLogin, 0, 0);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -162,10 +189,6 @@ namespace NTI_APP
 
         private void MainForm_Leave(object sender, EventArgs e)
         {
-            factoryIOProcess.Kill();
-            factoryIOProcess.WaitForExit();
-
-            MessageBox.Show("Factory I/O");
         }
     }
 }
