@@ -60,29 +60,29 @@
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="KnowButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALoAAAA8CAYAAADR56A0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAuVJREFUeF7t3e9x2kAQhnFKSAemhAsNxB3EHdgdJB0kHeSjZ2xh0oFKoARKoASV
+        EQAACxEBf2RfkQAAAuVJREFUeF7t3e9x2kAQhnFKSAemhAsNxB3EHdgdJB0kHeSjZ2xh0oFKoARKoASV
         cN49neIETkQa0J9bPTvzm4mNLOTJy3l1OsFqjHI7/8k9+7V79feu8A9u65+wUPr/rzlQkosYkTxLf4nN
         q//5ufB7UQkPtNB87Ddb/yu8COYe/hBuOdh44KlfCOiq1NDHaM2j9M+RHJiO3KkDBq5xlMA/xqhNUzqC
         y4EQcIxh/MBrDyVPXJ4cCDCGg05qxCgOV2EU3/pj4gCAsVSSw+8xkrevjew88aTAJHRWL0bzdhWnCpNP

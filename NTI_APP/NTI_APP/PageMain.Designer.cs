@@ -181,9 +181,9 @@ namespace NTI_APP
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(23, 33);
+            this.button1.Location = new System.Drawing.Point(25, 26);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 56);
+            this.button1.Size = new System.Drawing.Size(81, 71);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -330,7 +330,7 @@ namespace NTI_APP
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1648, 369);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1648, 381);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // textBox5
@@ -348,7 +348,6 @@ namespace NTI_APP
             // KnowButton
             // 
             this.KnowButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.KnowButton.AutoSize = true;
             this.KnowButton.BackColor = System.Drawing.SystemColors.Control;
             this.KnowButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("KnowButton.BackgroundImage")));
             this.KnowButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -358,7 +357,7 @@ namespace NTI_APP
             this.KnowButton.Location = new System.Drawing.Point(3, 307);
             this.KnowButton.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.KnowButton.Name = "KnowButton";
-            this.KnowButton.Size = new System.Drawing.Size(190, 59);
+            this.KnowButton.Size = new System.Drawing.Size(227, 71);
             this.KnowButton.TabIndex = 3;
             this.KnowButton.Text = "Узнать больше";
             this.KnowButton.UseVisualStyleBackColor = false;
@@ -372,7 +371,7 @@ namespace NTI_APP
             this.SliderBox1MainPage.Location = new System.Drawing.Point(827, 3);
             this.SliderBox1MainPage.Name = "SliderBox1MainPage";
             this.tableLayoutPanel2.SetRowSpan(this.SliderBox1MainPage, 4);
-            this.SliderBox1MainPage.Size = new System.Drawing.Size(818, 363);
+            this.SliderBox1MainPage.Size = new System.Drawing.Size(818, 375);
             this.SliderBox1MainPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.SliderBox1MainPage.TabIndex = 4;
             this.SliderBox1MainPage.TabStop = false;
