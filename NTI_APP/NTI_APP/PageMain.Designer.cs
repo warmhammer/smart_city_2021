@@ -310,7 +310,7 @@ namespace NTI_APP
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.AutoSize = true;
+            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.MainConteiners.SetColumnSpan(this.tableLayoutPanel2, 2);
@@ -321,7 +321,6 @@ namespace NTI_APP
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.KnowButton, 0, 3);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 714);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -330,7 +329,7 @@ namespace NTI_APP
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1648, 381);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1648, 700);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // textBox5
@@ -353,7 +352,7 @@ namespace NTI_APP
             this.SliderBox1MainPage.Location = new System.Drawing.Point(827, 3);
             this.SliderBox1MainPage.Name = "SliderBox1MainPage";
             this.tableLayoutPanel2.SetRowSpan(this.SliderBox1MainPage, 4);
-            this.SliderBox1MainPage.Size = new System.Drawing.Size(818, 375);
+            this.SliderBox1MainPage.Size = new System.Drawing.Size(818, 694);
             this.SliderBox1MainPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.SliderBox1MainPage.TabIndex = 4;
             this.SliderBox1MainPage.TabStop = false;
@@ -395,7 +394,7 @@ namespace NTI_APP
             this.KnowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.KnowButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.KnowButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.KnowButton.Location = new System.Drawing.Point(3, 310);
+            this.KnowButton.Location = new System.Drawing.Point(3, 469);
             this.KnowButton.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.KnowButton.Name = "KnowButton";
             this.KnowButton.Size = new System.Drawing.Size(187, 65);
