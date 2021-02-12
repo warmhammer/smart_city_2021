@@ -31,6 +31,7 @@ namespace NTI_APP
             this.pageMain = new PageMain();
             this.pageVideo = new PageVideo(factoryIOProcess);
             this.pageAbout = new PageAbout();
+            this.pageMain.KnoweledgeMore += new System.EventHandler(this.pageMainKnowMore_Click);
 
             InitializeComponent();
         }
@@ -117,6 +118,13 @@ namespace NTI_APP
             this.pageLogin.Dock = System.Windows.Forms.DockStyle.None;
             this.pageLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanelPagePlace.Controls.Add(this.pageLogin, 0, 0);
+        }
+        private void pageMainKnowMore_Click(object sender, EventArgs e)
+        {
+            this.tableLayoutPanelPagePlace.Controls.Clear();
+            this.pageAbout.Dock = System.Windows.Forms.DockStyle.None;
+            this.pageAbout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanelPagePlace.Controls.Add(this.pageAbout, 0, 0);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

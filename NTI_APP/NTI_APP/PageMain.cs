@@ -118,6 +118,9 @@ namespace NTI_APP
 
         }
 
-   
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.KnoweledgeMore.Invoke(sender,e);
+        }
     }
 }

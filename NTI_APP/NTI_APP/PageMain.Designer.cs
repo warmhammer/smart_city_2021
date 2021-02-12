@@ -50,7 +50,7 @@ namespace NTI_APP
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.KnowButton = new System.Windows.Forms.Button();
             this.SliderBox1MainPage = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -314,7 +314,7 @@ namespace NTI_APP
             this.tableLayoutPanel2.Controls.Add(this.textBox5, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.textBox6, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBox7, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.button3, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.KnowButton, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.SliderBox1MainPage, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 547);
@@ -368,19 +368,20 @@ namespace NTI_APP
     "авным нашим подразделением является автоматизация складских помещений по типу ко" +
     "мпании Amazon";
             // 
-            // button3
+            // KnowButton
             // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button3.Location = new System.Drawing.Point(3, 214);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(190, 59);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Узнать больше";
-            this.button3.UseVisualStyleBackColor = false;
+            this.KnowButton.BackColor = System.Drawing.Color.DodgerBlue;
+            this.KnowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.KnowButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.KnowButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.KnowButton.Location = new System.Drawing.Point(3, 214);
+            this.KnowButton.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
+            this.KnowButton.Name = "KnowButton";
+            this.KnowButton.Size = new System.Drawing.Size(190, 59);
+            this.KnowButton.TabIndex = 3;
+            this.KnowButton.Text = "Узнать больше";
+            this.KnowButton.UseVisualStyleBackColor = false;
+            this.KnowButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // SliderBox1MainPage
             // 
@@ -458,10 +459,12 @@ namespace NTI_APP
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button KnowButton;
         private System.Windows.Forms.PictureBox SliderBox1MainPage;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Timer timer1;
+
+        public System.EventHandler KnoweledgeMore;
         Image[] images = new Image[] { Properties.Resources.Slide1, Properties.Resources.Slide2, Properties.Resources.Slide3, Properties.Resources.Slide4 };
         private int timerCounter = 0;
 
