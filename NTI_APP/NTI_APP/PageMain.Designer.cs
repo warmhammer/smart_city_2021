@@ -71,7 +71,7 @@ namespace NTI_APP
             this.MainConteiners.SetColumnSpan(this.textBox3, 2);
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(125, 106);
+            this.textBox3.Location = new System.Drawing.Point(125, 173);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(1648, 22);
@@ -85,7 +85,7 @@ namespace NTI_APP
             this.MainConteiners.SetColumnSpan(this.textBox2, 2);
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(125, 62);
+            this.textBox2.Location = new System.Drawing.Point(125, 129);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(1648, 26);
@@ -99,8 +99,9 @@ namespace NTI_APP
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MainConteiners.SetColumnSpan(this.textBox1, 2);
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(125, 3);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(125, 70);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 70, 3, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(1648, 36);
             this.textBox1.TabIndex = 0;
@@ -157,7 +158,7 @@ namespace NTI_APP
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(125, 171);
+            this.splitContainer1.Location = new System.Drawing.Point(125, 238);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 40, 3, 3);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -194,7 +195,7 @@ namespace NTI_APP
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(95, 58);
+            this.linkLabel1.Location = new System.Drawing.Point(22, 49);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(242, 21);
@@ -220,7 +221,7 @@ namespace NTI_APP
             this.tableLayoutPanel1.Controls.Add(this.comboBox5, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 4, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(125, 347);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(125, 414);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 50, 3, 50);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
@@ -318,7 +319,7 @@ namespace NTI_APP
             this.tableLayoutPanel2.Controls.Add(this.KnowButton, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.SliderBox1MainPage, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 547);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 614);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
