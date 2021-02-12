@@ -32,5 +32,13 @@ namespace NTI_APP
         {
             LoginLinkClicked.Invoke(sender, e);
         }
+
+        private void EnteryButton_Click(object sender, EventArgs e)
+        {
+            string email = "'" + textBoxEmail.Text + "'";
+            string password = textBoxPassword.Text;
+
+
+        }
     }
 }
