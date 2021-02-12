@@ -48,10 +48,10 @@ namespace NTI_APP
             this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.KnowButton = new System.Windows.Forms.Button();
             this.SliderBox1MainPage = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -314,10 +314,10 @@ namespace NTI_APP
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.textBox5, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox6, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox7, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.KnowButton, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.SliderBox1MainPage, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 614);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
@@ -327,7 +327,7 @@ namespace NTI_APP
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1648, 308);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1648, 369);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // textBox5
@@ -342,35 +342,6 @@ namespace NTI_APP
             this.textBox5.TabIndex = 0;
             this.textBox5.Text = "О НАС";
             // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(3, 77);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 25, 3, 3);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(818, 51);
-            this.textBox6.TabIndex = 1;
-            this.textBox6.Text = "Наша компания работает на рынке автоматизации с 2006 года. Мы автоматизировали бо" +
-    "льше 150 производственных предприятий.";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(3, 141);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(818, 52);
-            this.textBox7.TabIndex = 2;
-            this.textBox7.Text = "Более 60% клиентов к нам обращаются повторно с другими задачами автоматизации. Гл" +
-    "авным нашим подразделением является автоматизация складских помещений по типу ко" +
-    "мпании Amazon";
-            // 
             // KnowButton
             // 
             this.KnowButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -379,7 +350,7 @@ namespace NTI_APP
             this.KnowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.KnowButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.KnowButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.KnowButton.Location = new System.Drawing.Point(3, 246);
+            this.KnowButton.Location = new System.Drawing.Point(3, 307);
             this.KnowButton.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.KnowButton.Name = "KnowButton";
             this.KnowButton.Size = new System.Drawing.Size(190, 59);
@@ -396,10 +367,37 @@ namespace NTI_APP
             this.SliderBox1MainPage.Location = new System.Drawing.Point(827, 3);
             this.SliderBox1MainPage.Name = "SliderBox1MainPage";
             this.tableLayoutPanel2.SetRowSpan(this.SliderBox1MainPage, 4);
-            this.SliderBox1MainPage.Size = new System.Drawing.Size(818, 302);
+            this.SliderBox1MainPage.Size = new System.Drawing.Size(818, 363);
             this.SliderBox1MainPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.SliderBox1MainPage.TabIndex = 4;
             this.SliderBox1MainPage.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(3, 72);
+            this.label1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(818, 50);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Наша компания работает на рынке автоматизации с 2006 года. Мы автоматизировали бо" +
+    "льше 150 производственных предприятий.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(3, 182);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 60, 3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(818, 75);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Более 60% клиентов к нам обращаются повторно с другими задачами автоматизации. Гл" +
+    "авным нашим подразделением является автоматизация складских помещений по типу ко" +
+    "мпании Amazon";
             // 
             // textBox4
             // 
@@ -463,8 +461,6 @@ namespace NTI_APP
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button KnowButton;
         private System.Windows.Forms.PictureBox SliderBox1MainPage;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
@@ -473,6 +469,7 @@ namespace NTI_APP
         public System.EventHandler KnoweledgeMore;
         Image[] images = new Image[] { Properties.Resources.Slide1, Properties.Resources.Slide2, Properties.Resources.Slide3, Properties.Resources.Slide4 };
         private int timerCounter = 0;
-
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
