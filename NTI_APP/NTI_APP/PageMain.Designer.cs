@@ -131,7 +131,7 @@ namespace NTI_APP
             this.MainConteiners.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.MainConteiners.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.MainConteiners.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.MainConteiners.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.MainConteiners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.MainConteiners.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.MainConteiners.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.MainConteiners.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -226,7 +226,7 @@ namespace NTI_APP
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1648, 100);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1648, 200);
             this.tableLayoutPanel1.TabIndex = 6;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -301,7 +301,7 @@ namespace NTI_APP
             this.button2.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(1404, 27);
+            this.button2.Location = new System.Drawing.Point(1404, 77);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 46);
             this.button2.TabIndex = 5;
@@ -310,6 +310,7 @@ namespace NTI_APP
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.MainConteiners.SetColumnSpan(this.tableLayoutPanel2, 2);
@@ -321,7 +322,7 @@ namespace NTI_APP
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.KnowButton, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 614);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 714);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
@@ -397,7 +398,7 @@ namespace NTI_APP
             this.KnowButton.Location = new System.Drawing.Point(3, 310);
             this.KnowButton.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.KnowButton.Name = "KnowButton";
-            this.KnowButton.Size = new System.Drawing.Size(189, 65);
+            this.KnowButton.Size = new System.Drawing.Size(187, 65);
             this.KnowButton.TabIndex = 3;
             this.KnowButton.Text = "Узнать больше";
             this.KnowButton.UseVisualStyleBackColor = false;
