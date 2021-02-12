@@ -26,6 +26,7 @@ namespace NTI_APP
 
             this.pageRegistration = new PageRegistration(conn);
             this.pageRegistration.LoginLinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.pageRegistrationLogin_Click);
+            this.pageRegistration.RegistrationSuccess += new System.EventHandler(this.pageRegistrationSuccess);
 
 
             this.pageMain = new PageMain();
@@ -113,6 +114,16 @@ namespace NTI_APP
         private void pageLoginEnterSuccess(object sender, EventArgs e)
         {
             loginFlag = true; 
+
+            this.tableLayoutPanelPagePlace.Controls.Clear();
+            this.pageAccount.Dock = System.Windows.Forms.DockStyle.None;
+            this.pageAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanelPagePlace.Controls.Add(this.pageAccount, 0, 0);
+        }
+
+        private void pageRegistrationSuccess(object sender, EventArgs e)
+        {
+            loginFlag = true;
 
             this.tableLayoutPanelPagePlace.Controls.Clear();
             this.pageAccount.Dock = System.Windows.Forms.DockStyle.None;

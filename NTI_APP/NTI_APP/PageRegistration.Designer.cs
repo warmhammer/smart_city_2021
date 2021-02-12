@@ -226,7 +226,9 @@ namespace NTI_APP
         private System.Windows.Forms.Button EnteryButton;
         private System.Windows.Forms.LinkLabel linkForgotPassword;
 
+        public System.EventHandler RegistrationSuccess;
         public System.Windows.Forms.LinkLabelLinkClickedEventHandler LoginLinkClicked;
+
         private System.Windows.Forms.Label labelError;
         private MySqlConnection conn;
     }

@@ -68,8 +68,6 @@ namespace NTI_APP
 
             if (points == 0)
             {
-                
-
                 string sql0 = "SELECT MAX(id) FROM user";
                 MySqlCommand command0 = new MySqlCommand(sql0, conn);
                 string maxid = command0.ExecuteScalar().ToString();
@@ -90,6 +88,8 @@ namespace NTI_APP
                 MySqlCommand command = new MySqlCommand(sql, conn);
                 command.ExecuteNonQuery();
 
+                RegistrationSuccess.Invoke(sender, e);
+
 
                 //int  = rnd.Next(1000, 9999);
                 ////////updating a mailcode using email ///NEEDTO DEBAG
@@ -98,13 +98,7 @@ namespace NTI_APP
                 ////string sql = "UPDATE user SET `mailcode` =" + newmailcode + " WHERE `email`=" + usermail;
                 ////MySqlCommand command = new MySqlCommand(sql, conn);
                 ////command.ExecutelionQuery();
-
-
-
-
-
             }
-
             else
             {
                 labelError.Text = errorMessage;
