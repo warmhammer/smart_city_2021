@@ -1,4 +1,5 @@
-﻿
+﻿using MySql.Data.MySqlClient;
+
 namespace NTI_APP
 {
     partial class PageTimetable
@@ -117,5 +118,7 @@ namespace NTI_APP
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
+
+        MySqlConnection conn;
     }
 }
