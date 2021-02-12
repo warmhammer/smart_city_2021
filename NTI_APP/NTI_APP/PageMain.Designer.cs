@@ -293,12 +293,13 @@ namespace NTI_APP
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.AutoSize = true;
             this.button2.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(1411, 40);
+            this.button2.Location = new System.Drawing.Point(1418, 38);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 40);
+            this.button2.Size = new System.Drawing.Size(128, 43);
             this.button2.TabIndex = 5;
             this.button2.Text = "Отправить";
             this.button2.UseVisualStyleBackColor = false;
@@ -325,27 +326,28 @@ namespace NTI_APP
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1648, 276);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1648, 308);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // textBox5
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox5.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBox5.Location = new System.Drawing.Point(3, 3);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(818, 36);
+            this.textBox5.Size = new System.Drawing.Size(818, 46);
             this.textBox5.TabIndex = 0;
             this.textBox5.Text = "О НАС";
             // 
             // textBox6
             // 
+            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(3, 45);
+            this.textBox6.Location = new System.Drawing.Point(3, 77);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 25, 3, 3);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(818, 51);
@@ -355,10 +357,10 @@ namespace NTI_APP
             // 
             // textBox7
             // 
+            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(3, 109);
+            this.textBox7.Location = new System.Drawing.Point(3, 141);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
@@ -370,11 +372,13 @@ namespace NTI_APP
             // 
             // KnowButton
             // 
+            this.KnowButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.KnowButton.AutoSize = true;
             this.KnowButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.KnowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.KnowButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.KnowButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.KnowButton.Location = new System.Drawing.Point(3, 214);
+            this.KnowButton.Location = new System.Drawing.Point(3, 246);
             this.KnowButton.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.KnowButton.Name = "KnowButton";
             this.KnowButton.Size = new System.Drawing.Size(190, 59);
@@ -391,7 +395,7 @@ namespace NTI_APP
             this.SliderBox1MainPage.Location = new System.Drawing.Point(827, 3);
             this.SliderBox1MainPage.Name = "SliderBox1MainPage";
             this.tableLayoutPanel2.SetRowSpan(this.SliderBox1MainPage, 4);
-            this.SliderBox1MainPage.Size = new System.Drawing.Size(818, 270);
+            this.SliderBox1MainPage.Size = new System.Drawing.Size(818, 302);
             this.SliderBox1MainPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.SliderBox1MainPage.TabIndex = 4;
             this.SliderBox1MainPage.TabStop = false;
@@ -432,6 +436,7 @@ namespace NTI_APP
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SliderBox1MainPage)).EndInit();
