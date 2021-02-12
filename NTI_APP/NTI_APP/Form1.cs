@@ -23,6 +23,8 @@ namespace NTI_APP
             this.pageLogin.RegistrationLinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.pageLoginRegistration_Click);
 
 
+            this.pageMain = new PageMain();
+            this.pageVideo = new PageVideo(factoryIOProcess);
             this.pageAbout = new PageAbout();
 
             InitializeComponent();
@@ -49,7 +51,14 @@ namespace NTI_APP
             messageBoxCS.AppendLine();
             MessageBox.Show(messageBoxCS.ToString(), "ItemClicked Event");
             */
-            
+
+            if (e.ClickedItem == toolStripMenuItemMain)
+            {
+                this.tableLayoutPanelPagePlace.Controls.Clear();
+                this.pageMain.Dock = System.Windows.Forms.DockStyle.None;
+                this.pageMain.Anchor = System.Windows.Forms.AnchorStyles.None;
+                this.tableLayoutPanelPagePlace.Controls.Add(this.pageMain, 0, 0);
+            }
             if (e.ClickedItem == toolStripMenuItemAccount)
             {
                 this.tableLayoutPanelPagePlace.Controls.Clear();
@@ -63,6 +72,13 @@ namespace NTI_APP
                 this.pageAbout.Dock = System.Windows.Forms.DockStyle.None;
                 this.pageAbout.Anchor = System.Windows.Forms.AnchorStyles.None;
                 this.tableLayoutPanelPagePlace.Controls.Add(this.pageAbout, 0, 0);
+            }
+            if (e.ClickedItem == toolStripMenuItemVideo)
+            {
+                this.tableLayoutPanelPagePlace.Controls.Clear();
+                this.pageVideo.Dock = System.Windows.Forms.DockStyle.None;
+                this.pageVideo.Anchor = System.Windows.Forms.AnchorStyles.None;
+                this.tableLayoutPanelPagePlace.Controls.Add(this.pageVideo, 0, 0);
             }
         }
 

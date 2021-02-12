@@ -233,8 +233,12 @@ namespace NTI_APP
         private System.Windows.Forms.GroupBox groupBox2;
 
         private PageLogin pageLogin;
-        private PageAbout pageAbout;
         private PageRegistration pageRegistration;
+        private PageMain pageMain;
+
+        private PageAbout pageAbout;
+        private PageVideo pageVideo;
+        
 
         private System.Diagnostics.Process factoryIOProcess;
     }
