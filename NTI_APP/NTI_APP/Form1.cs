@@ -8,16 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using MySql.Data.MySqlClient;
 
 namespace NTI_APP
 {
     public partial class MainForm : Form
     {
-        public MainForm(System.Diagnostics.Process factoryIOProcess)
+        public MainForm(System.Diagnostics.Process factoryIOProcess, MySqlConnection conn)
         {
             this.factoryIOProcess = factoryIOProcess;
+            this.conn = conn;
 
-            this.pageLogin = new PageLogin();
+            this.pageLogin = new PageLogin(conn);
             this.pageLogin.RegistrationLinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.pageLoginRegistration_Click);
             this.pageLogin.EnterSuccess += new System.EventHandler(this.pageLoginEnterSuccess);
             this.pageAccount = new PageAccount();

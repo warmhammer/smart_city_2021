@@ -1,5 +1,6 @@
 ﻿
 using System.Drawing;
+using MySql.Data.MySqlClient;
 
 
 namespace NTI_APP
@@ -223,5 +224,8 @@ namespace NTI_APP
 
         public System.Windows.Forms.LinkLabelLinkClickedEventHandler RegistrationLinkClicked;
         public System.EventHandler EnterSuccess;
+
+
+        private MySqlConnection conn;
     }
 }

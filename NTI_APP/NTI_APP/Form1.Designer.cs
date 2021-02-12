@@ -1,4 +1,5 @@
-﻿
+﻿using MySql.Data.MySqlClient;
+
 namespace NTI_APP
 {
     partial class MainForm
@@ -243,6 +244,7 @@ namespace NTI_APP
         private bool loginFlag = false;
 
         private System.Diagnostics.Process factoryIOProcess;
+        private MySqlConnection conn;
     }
 }
 

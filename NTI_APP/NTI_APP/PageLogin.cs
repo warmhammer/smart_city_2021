@@ -7,21 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace NTI_APP
 {
-    public partial class PageLogin : UserControl
+
+
+   public partial class PageLogin : UserControl
     {
-        public PageLogin()
+        public PageLogin(MySqlConnection conn)
         {
+            this.conn = conn;
             InitializeComponent();
         }
+
         private void linkLabelRegistration_Click(object sender, EventArgs e)
         {
 
         }
 
+       
      
+
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
@@ -40,15 +47,33 @@ namespace NTI_APP
 
         private void EnteryButton_Click(object sender, EventArgs e)
         {
-            //Nikite suda
+            
+            string email ="'" + textBoxEmail.Text + "'";
+            string password =  textBoxPassword.Text ;
 
-            string email = textBoxEmail.Text;
-            string password = textBoxPassword.Text;
+            
 
-            //Success
-            EnterSuccess.Invoke(sender, e);
+            string sql = "SELECT `password` from user where email =" + email;
+            MySqlCommand command = new MySqlCommand (sql, conn);
 
-            //Failure
+        
+            
+
+            string pass;
+
+            if (command.ExecuteScalar() != null)
+            { 
+               pass = command.ExecuteScalar().ToString();
+                if (pass == password)
+                {
+                    EnterSuccess.Invoke(sender, e);
+                }
+            }
+            if (command.ExecuteScalar() == null)
+            {
+                string error = "email doesn't exist";
+                return;            
+            }
         }
     }
 }
