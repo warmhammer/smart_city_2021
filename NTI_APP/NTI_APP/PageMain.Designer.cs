@@ -48,10 +48,10 @@ namespace NTI_APP
             this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.KnowButton = new System.Windows.Forms.Button();
             this.SliderBox1MainPage = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.KnowButton = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -310,17 +310,16 @@ namespace NTI_APP
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.MainConteiners.SetColumnSpan(this.tableLayoutPanel2, 2);
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.textBox5, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.KnowButton, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.SliderBox1MainPage, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.KnowButton, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 614);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
@@ -344,24 +343,6 @@ namespace NTI_APP
             this.textBox5.Size = new System.Drawing.Size(818, 46);
             this.textBox5.TabIndex = 0;
             this.textBox5.Text = "О НАС";
-            // 
-            // KnowButton
-            // 
-            this.KnowButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.KnowButton.BackColor = System.Drawing.SystemColors.Control;
-            this.KnowButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("KnowButton.BackgroundImage")));
-            this.KnowButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.KnowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.KnowButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.KnowButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.KnowButton.Location = new System.Drawing.Point(3, 307);
-            this.KnowButton.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
-            this.KnowButton.Name = "KnowButton";
-            this.KnowButton.Size = new System.Drawing.Size(227, 71);
-            this.KnowButton.TabIndex = 3;
-            this.KnowButton.Text = "Узнать больше";
-            this.KnowButton.UseVisualStyleBackColor = false;
-            this.KnowButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // SliderBox1MainPage
             // 
@@ -402,6 +383,25 @@ namespace NTI_APP
             this.label2.Text = "Более 60% клиентов к нам обращаются повторно с другими задачами автоматизации. Гл" +
     "авным нашим подразделением является автоматизация складских помещений по типу ко" +
     "мпании Amazon";
+            // 
+            // KnowButton
+            // 
+            this.KnowButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.KnowButton.AutoSize = true;
+            this.KnowButton.BackColor = System.Drawing.SystemColors.Control;
+            this.KnowButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("KnowButton.BackgroundImage")));
+            this.KnowButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.KnowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.KnowButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.KnowButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.KnowButton.Location = new System.Drawing.Point(3, 310);
+            this.KnowButton.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
+            this.KnowButton.Name = "KnowButton";
+            this.KnowButton.Size = new System.Drawing.Size(189, 65);
+            this.KnowButton.TabIndex = 3;
+            this.KnowButton.Text = "Узнать больше";
+            this.KnowButton.UseVisualStyleBackColor = false;
+            this.KnowButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox4
             // 
