@@ -73,6 +73,16 @@ namespace NTI_APP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buttonBlue {
+            get {
+                object obj = ResourceManager.GetObject("buttonBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap enterButton {
             get {
                 object obj = ResourceManager.GetObject("enterButton", resourceCulture);
@@ -166,6 +176,16 @@ namespace NTI_APP.Properties {
         internal static System.Drawing.Bitmap There_is_nothing {
             get {
                 object obj = ResourceManager.GetObject("There_is_nothing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap videoButton {
+            get {
+                object obj = ResourceManager.GetObject("videoButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

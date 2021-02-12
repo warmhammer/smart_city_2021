@@ -176,14 +176,14 @@ namespace NTI_APP
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(20, 50);
+            this.button1.Location = new System.Drawing.Point(23, 33);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(81, 56);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -224,7 +224,6 @@ namespace NTI_APP
             this.tableLayoutPanel1.Location = new System.Drawing.Point(125, 414);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 50, 3, 50);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1648, 100);
@@ -242,7 +241,8 @@ namespace NTI_APP
             "Санкт-Петербург",
             "Козельск",
             "Воркута"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 23);
+            this.comboBox1.Location = new System.Drawing.Point(3, 30);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(323, 28);
             this.comboBox1.TabIndex = 0;
@@ -256,7 +256,8 @@ namespace NTI_APP
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "ООО \"Амазония\""});
-            this.comboBox2.Location = new System.Drawing.Point(332, 23);
+            this.comboBox2.Location = new System.Drawing.Point(332, 30);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(323, 28);
             this.comboBox2.TabIndex = 1;
@@ -273,7 +274,8 @@ namespace NTI_APP
             "4 Га",
             "5 Га",
             "8 Га"});
-            this.comboBox3.Location = new System.Drawing.Point(661, 23);
+            this.comboBox3.Location = new System.Drawing.Point(661, 30);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(323, 28);
             this.comboBox3.TabIndex = 2;
@@ -285,7 +287,8 @@ namespace NTI_APP
             this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox5.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(990, 23);
+            this.comboBox5.Location = new System.Drawing.Point(990, 30);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(323, 28);
             this.comboBox5.TabIndex = 4;
@@ -298,9 +301,9 @@ namespace NTI_APP
             this.button2.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(1418, 38);
+            this.button2.Location = new System.Drawing.Point(1404, 27);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 43);
+            this.button2.Size = new System.Drawing.Size(155, 46);
             this.button2.TabIndex = 5;
             this.button2.Text = "Отправить";
             this.button2.UseVisualStyleBackColor = false;
@@ -346,7 +349,9 @@ namespace NTI_APP
             // 
             this.KnowButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.KnowButton.AutoSize = true;
-            this.KnowButton.BackColor = System.Drawing.Color.DodgerBlue;
+            this.KnowButton.BackColor = System.Drawing.SystemColors.Control;
+            this.KnowButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("KnowButton.BackgroundImage")));
+            this.KnowButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.KnowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.KnowButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.KnowButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
