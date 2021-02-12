@@ -240,6 +240,7 @@ namespace NTI_APP
         private PageMain pageMain;
         private PageAbout pageAbout;
         private PageVideo pageVideo;
+        private PageTimetable pageTimetable;
 
         private bool loginFlag = false;
 

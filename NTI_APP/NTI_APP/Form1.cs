@@ -31,6 +31,7 @@ namespace NTI_APP
             this.pageMain = new PageMain();
             this.pageVideo = new PageVideo(factoryIOProcess);
             this.pageAbout = new PageAbout();
+            this.pageTimetable = new PageTimetable();
             this.pageMain.KnoweledgeMore += new System.EventHandler(this.pageMainKnowMore_Click);
 
             InitializeComponent();
@@ -91,6 +92,13 @@ namespace NTI_APP
                 this.pageVideo.Dock = System.Windows.Forms.DockStyle.None;
                 this.pageVideo.Anchor = System.Windows.Forms.AnchorStyles.None;
                 this.tableLayoutPanelPagePlace.Controls.Add(this.pageVideo, 0, 0);
+            }
+            if (e.ClickedItem == toolStripMenuItemTimetable)
+            {
+                this.tableLayoutPanelPagePlace.Controls.Clear();
+                this.pageTimetable.Dock = System.Windows.Forms.DockStyle.None;
+                this.pageTimetable.Anchor = System.Windows.Forms.AnchorStyles.None;
+                this.tableLayoutPanelPagePlace.Controls.Add(this.pageTimetable, 0, 0);
             }
         }
 
