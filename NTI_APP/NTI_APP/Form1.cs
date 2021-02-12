@@ -31,7 +31,7 @@ namespace NTI_APP
             this.pageMain = new PageMain();
             this.pageVideo = new PageVideo(factoryIOProcess);
             this.pageAbout = new PageAbout();
-            this.pageTimetable = new PageTimetable();
+            this.pageTimetable = new PageTimetable(conn);
             this.pageMain.KnoweledgeMore += new System.EventHandler(this.pageMainKnowMore_Click);
 
             InitializeComponent();
