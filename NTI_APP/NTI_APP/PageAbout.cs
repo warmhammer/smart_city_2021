@@ -87,5 +87,65 @@ namespace NTI_APP
             procInfo.UseShellExecute = true;
             Process.Start(procInfo);
         }
+
+        private void label4_MouseEnter(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.Black;
+        }
+
+        private void label4_MouseLeave(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.DimGray;
+        }
+
+        private void label5_MouseEnter(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.Black;
+        }
+
+        private void label5_MouseLeave(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.DimGray;
+        }
+
+        private void labelMail1_MouseEnter(object sender, EventArgs e)
+        {
+            labelMail1.ForeColor = Color.Black;
+        }
+
+        private void labelMail1_MouseLeave(object sender, EventArgs e)
+        {
+            labelMail1.ForeColor = Color.DimGray;
+        }
+
+        private void labelAddress1_MouseEnter(object sender, EventArgs e)
+        {
+            labelAddress1.ForeColor = Color.Black;
+        }
+
+        private void labelAddress1_MouseLeave(object sender, EventArgs e)
+        {
+            labelAddress1.ForeColor = Color.DimGray;
+        }
+
+        private void labelAddress2_MouseEnter(object sender, EventArgs e)
+        {
+            labelAddress2.ForeColor = Color.Black;
+        }
+
+        private void labelAddress2_MouseLeave(object sender, EventArgs e)
+        {
+            labelAddress2.ForeColor = Color.DimGray;
+        }
+
+        private void labelMail2_MouseEnter(object sender, EventArgs e)
+        {
+            labelMail2.ForeColor = Color.Black;
+        }
+
+        private void labelMail2_MouseLeave(object sender, EventArgs e)
+        {
+            labelMail2.ForeColor = Color.DimGray;
+        }
     }
 }

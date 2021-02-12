@@ -57,7 +57,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAC4AAAAyCAYAAAAjrenXAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -72,7 +72,7 @@
   <data name="panel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEUAAAAyCAYAAAAKqhZQAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAA5ZJREFUaEPlmut1nDAQhbcEl+AStoTtIO4g7iDuYNnHf7uDTQcpISW4BJfgEpJ7
+        EgAACxIB0t1+/AAAA5ZJREFUaEPlmut1nDAQhbcEl+AStoTtIO4g7iDuYNnHf7uDTQcpISW4BJfgEpJ7
         dWZkSQGCYASCvefM4SEkZj70mIXdLammaR7O5/MR9gH7czqdfuPcoxTfnwDhOYDxju0v7ovd7goOgj0g
         aAcD9nm5XL5LEcseAeinlG0fDmFweCgM7ONU8yDFkTYPJwdGKly3D+qydx1XDWcKjFSo9yRQHJxwyK1C
         fJIA4Ls+9t/GwkiF9vzkzG31cBg4HH0Vh2nF5gG0XTccgcFc45NOcsjg3EGKiwr3qwvOkjBScb4ilMX8
@@ -93,7 +93,7 @@
   <data name="panel4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEsAAAAyCAYAAAAUYybjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAABp9JREFUaEPlm+FVJDcQhAnhQnAIhEAGJgOTgcmA5eC/yYDLAGfgEAiBEC4Euz5d
+        EgAACxIB0t1+/AAABp9JREFUaEPlm+FVJDcQhAnhQnAIhEAGJgOTgcmA5eC/yYDLAGfgEAiBEC4Euz5d
         9VizM9JImjlj7uo9vd1tdbe6S2pJOwsX743T6XR1f3//9Pnz5xe1N7W/s/amvr/ol9612ieb/TwgaRFx
         p/Y1J0YNwp6z9iKiXvWaE/gs+1/s6sfGw8PD70o4kcSq4XPLipEOK/DLT0GaVxMrB5JeSd5dXYCgjLS3
         H44wiIpy0uuTxbsgXzdqrNCv8n9p8cdHRtTJokPAqsoI+/grTImwkW8SpWSvrPssXU7A6RS0yipsl0rb

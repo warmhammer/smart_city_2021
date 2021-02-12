@@ -201,7 +201,9 @@ namespace NTI_APP
             this.Name = "MainForm";
             this.Text = "Система автоматического склада";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Leave += new System.EventHandler(this.MainForm_Leave);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -233,6 +235,8 @@ namespace NTI_APP
         private PageLogin pageLogin;
         private PageAbout pageAbout;
         private PageRegistration pageRegistration;
+
+        private System.Diagnostics.Process factoryIOProcess;
     }
 }
 

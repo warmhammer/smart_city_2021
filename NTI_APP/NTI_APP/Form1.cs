@@ -13,8 +13,11 @@ namespace NTI_APP
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        public MainForm(System.Diagnostics.Process factoryIOProcess)
         {
+            this.factoryIOProcess = factoryIOProcess;
+
+
             this.pageRegistration = new PageRegistration();
             this.pageLogin = new PageLogin();
             this.pageLogin.RegistrationLinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.pageLoginRegistration_Click);
@@ -22,13 +25,15 @@ namespace NTI_APP
 
             this.pageAbout = new PageAbout();
 
-            //ProcessStartInfo procInfo = new ProcessStartInfo(@"C:/Program Files (x86)/Real Games/Factory IO/Factory IO.exe");
-            //procInfo.UseShellExecute = true;
-            //procInfo.FileName = "C:/Program Files (x86)/Real Games/Factory IO/Scenes/Automated Warehouse.factoryio";
-
-            //Process.Start(procInfo);
-
             InitializeComponent();
+        }
+
+        ~MainForm()
+        {
+            factoryIOProcess.Kill();
+            factoryIOProcess.WaitForExit();
+
+            MessageBox.Show("Factory I/O");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -132,6 +137,19 @@ namespace NTI_APP
         private void tableLayoutPanelPagePlace_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void MainForm_Deactivate(object sender, EventArgs e)
+        {
+            //factoryIOProcess.Kill();
+        }
+
+        private void MainForm_Leave(object sender, EventArgs e)
+        {
+            factoryIOProcess.Kill();
+            factoryIOProcess.WaitForExit();
+
+            MessageBox.Show("Factory I/O");
         }
     }
 }

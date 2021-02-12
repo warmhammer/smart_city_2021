@@ -61,12 +61,12 @@ namespace NTI_APP
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.48241F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.51759F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1147, 498);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1966, 996);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -75,20 +75,19 @@ namespace NTI_APP
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Location = new System.Drawing.Point(336, 18);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(576, 36);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(474, 46);
+            this.panel1.Size = new System.Drawing.Size(813, 92);
             this.panel1.TabIndex = 0;
             // 
             // label11
             // 
             this.label11.Dock = System.Windows.Forms.DockStyle.Top;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 20.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(0, 15);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(0, 30);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(474, 31);
+            this.label11.Size = new System.Drawing.Size(813, 62);
             this.label11.TabIndex = 1;
             this.label11.Text = "НАШИ КОНТАКТЫ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -97,9 +96,8 @@ namespace NTI_APP
             // 
             this.label10.Dock = System.Windows.Forms.DockStyle.Top;
             this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(474, 15);
+            this.label10.Size = new System.Drawing.Size(813, 30);
             this.label10.TabIndex = 0;
             this.label10.Text = "МЫ ОТКРЫТЫ ДЛЯ СОТРУДНИЧЕСТВА";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,23 +120,23 @@ namespace NTI_APP
             this.tableLayoutPanel2.Controls.Add(this.labelMail2, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.labelAddress1, 1, 9);
             this.tableLayoutPanel2.Controls.Add(this.labelAddress2, 1, 10);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(670, 117);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1149, 235);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 12;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(379, 345);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(650, 690);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // panel2
@@ -150,7 +148,7 @@ namespace NTI_APP
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.tableLayoutPanel2.SetRowSpan(this.panel2, 2);
-            this.panel2.Size = new System.Drawing.Size(94, 64);
+            this.panel2.Size = new System.Drawing.Size(162, 128);
             this.panel2.TabIndex = 0;
             // 
             // panel3
@@ -158,11 +156,11 @@ namespace NTI_APP
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 114);
+            this.panel3.Location = new System.Drawing.Point(0, 228);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.tableLayoutPanel2.SetRowSpan(this.panel3, 2);
-            this.panel3.Size = new System.Drawing.Size(94, 64);
+            this.panel3.Size = new System.Drawing.Size(162, 128);
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -171,11 +169,11 @@ namespace NTI_APP
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 228);
+            this.panel4.Location = new System.Drawing.Point(0, 456);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
             this.tableLayoutPanel2.SetRowSpan(this.panel4, 2);
-            this.panel4.Size = new System.Drawing.Size(94, 64);
+            this.panel4.Size = new System.Drawing.Size(162, 128);
             this.panel4.TabIndex = 2;
             // 
             // label1
@@ -183,10 +181,9 @@ namespace NTI_APP
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(96, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(165, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 32);
+            this.label1.Size = new System.Drawing.Size(256, 64);
             this.label1.TabIndex = 3;
             this.label1.Text = "НАШИ ТЕЛЕФОНЫ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,10 +194,9 @@ namespace NTI_APP
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(96, 114);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(165, 228);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 32);
+            this.label2.Size = new System.Drawing.Size(201, 64);
             this.label2.TabIndex = 4;
             this.label2.Text = "НАША ПОЧТА";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,10 +207,9 @@ namespace NTI_APP
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Left;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(96, 228);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(165, 456);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 32);
+            this.label3.Size = new System.Drawing.Size(213, 64);
             this.label3.TabIndex = 5;
             this.label3.Text = "НАШИ АДРЕСА";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -224,87 +219,93 @@ namespace NTI_APP
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Left;
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(96, 32);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(165, 64);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 32);
+            this.label4.Size = new System.Drawing.Size(192, 64);
             this.label4.TabIndex = 6;
             this.label4.Text = "Отдел продаж:\r\n+7-(999)-999-99-99";
             this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.MouseEnter += new System.EventHandler(this.label4_MouseEnter);
+            this.label4.MouseLeave += new System.EventHandler(this.label4_MouseLeave);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Left;
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(96, 64);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(165, 128);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(194, 32);
+            this.label5.Size = new System.Drawing.Size(342, 64);
             this.label5.TabIndex = 7;
             this.label5.Text = "Отдел по работе с подрядчиками:\r\n+7-(999)-999-99-99\r\n";
             this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.MouseEnter += new System.EventHandler(this.label5_MouseEnter);
+            this.label5.MouseLeave += new System.EventHandler(this.label5_MouseLeave);
             // 
             // labelMail1
             // 
             this.labelMail1.AutoSize = true;
             this.labelMail1.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelMail1.ForeColor = System.Drawing.Color.DimGray;
-            this.labelMail1.Location = new System.Drawing.Point(96, 146);
-            this.labelMail1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMail1.Location = new System.Drawing.Point(165, 292);
             this.labelMail1.Name = "labelMail1";
-            this.labelMail1.Size = new System.Drawing.Size(159, 32);
+            this.labelMail1.Size = new System.Drawing.Size(278, 64);
             this.labelMail1.TabIndex = 8;
             this.labelMail1.Text = "Отдел работы с клиентами:\r\ninfo@mail.ru\r\n";
             this.labelMail1.Click += new System.EventHandler(this.label6_Click);
+            this.labelMail1.MouseEnter += new System.EventHandler(this.labelMail1_MouseEnter);
+            this.labelMail1.MouseLeave += new System.EventHandler(this.labelMail1_MouseLeave);
             // 
             // labelMail2
             // 
             this.labelMail2.AutoSize = true;
             this.labelMail2.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelMail2.ForeColor = System.Drawing.Color.DimGray;
-            this.labelMail2.Location = new System.Drawing.Point(96, 178);
-            this.labelMail2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMail2.Location = new System.Drawing.Point(165, 356);
             this.labelMail2.Name = "labelMail2";
-            this.labelMail2.Size = new System.Drawing.Size(94, 32);
+            this.labelMail2.Size = new System.Drawing.Size(165, 64);
             this.labelMail2.TabIndex = 9;
             this.labelMail2.Text = "Оптовый отдел:\r\ninfo@mail.ru";
             this.labelMail2.Click += new System.EventHandler(this.labelMail2_Click);
+            this.labelMail2.MouseEnter += new System.EventHandler(this.labelMail2_MouseEnter);
+            this.labelMail2.MouseLeave += new System.EventHandler(this.labelMail2_MouseLeave);
             // 
             // labelAddress1
             // 
             this.labelAddress1.AutoSize = true;
             this.labelAddress1.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelAddress1.ForeColor = System.Drawing.Color.DimGray;
-            this.labelAddress1.Location = new System.Drawing.Point(96, 260);
-            this.labelAddress1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAddress1.Location = new System.Drawing.Point(165, 520);
             this.labelAddress1.Name = "labelAddress1";
-            this.labelAddress1.Size = new System.Drawing.Size(163, 32);
+            this.labelAddress1.Size = new System.Drawing.Size(285, 64);
             this.labelAddress1.TabIndex = 10;
             this.labelAddress1.Text = "Офис:\r\nг. Караганда, ул. Гоголя, 34А";
             this.labelAddress1.Click += new System.EventHandler(this.labelAddress1_Click);
+            this.labelAddress1.MouseEnter += new System.EventHandler(this.labelAddress1_MouseEnter);
+            this.labelAddress1.MouseLeave += new System.EventHandler(this.labelAddress1_MouseLeave);
             // 
             // labelAddress2
             // 
             this.labelAddress2.AutoSize = true;
             this.labelAddress2.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelAddress2.ForeColor = System.Drawing.Color.DimGray;
-            this.labelAddress2.Location = new System.Drawing.Point(96, 292);
-            this.labelAddress2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAddress2.Location = new System.Drawing.Point(165, 584);
             this.labelAddress2.Name = "labelAddress2";
-            this.labelAddress2.Size = new System.Drawing.Size(163, 32);
+            this.labelAddress2.Size = new System.Drawing.Size(285, 64);
             this.labelAddress2.TabIndex = 11;
             this.labelAddress2.Text = "Склад:\r\nг. Караганда, ул. Гоголя, 34А";
             this.labelAddress2.Click += new System.EventHandler(this.labelAddress2_Click);
+            this.labelAddress2.MouseEnter += new System.EventHandler(this.labelAddress2_MouseEnter);
+            this.labelAddress2.MouseLeave += new System.EventHandler(this.labelAddress2_MouseLeave);
             // 
             // PageAbout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PageAbout";
-            this.Size = new System.Drawing.Size(1147, 498);
+            this.Size = new System.Drawing.Size(1966, 996);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
