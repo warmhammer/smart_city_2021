@@ -42,6 +42,7 @@ namespace NTI_APP
             this.panelMail = new System.Windows.Forms.Panel();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.linkForgotPassword = new System.Windows.Forms.LinkLabel();
+            this.labelError = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelPassword.SuspendLayout();
             this.panelMail.SuspendLayout();
@@ -70,16 +71,18 @@ namespace NTI_APP
             this.tableLayoutPanel1.Controls.Add(this.EnteryLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelMail, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.linkForgotPassword, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelError, 0, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(424, 290);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(424, 370);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // EnteryButton
@@ -100,6 +103,7 @@ namespace NTI_APP
             this.EnteryButton.Size = new System.Drawing.Size(95, 71);
             this.EnteryButton.TabIndex = 2;
             this.EnteryButton.UseVisualStyleBackColor = false;
+            this.EnteryButton.Click += new System.EventHandler(this.EnteryButton_Click);
             // 
             // panelPassword
             // 
@@ -122,9 +126,11 @@ namespace NTI_APP
             this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxPassword.Location = new System.Drawing.Point(23, 10);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.PlaceholderText = "Пароль";
-            this.textBoxPassword.Size = new System.Drawing.Size(360, 32);
+            this.textBoxPassword.Size = new System.Drawing.Size(360, 45);
             this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // panelMail
             // 
@@ -148,7 +154,7 @@ namespace NTI_APP
             this.textBoxEmail.Location = new System.Drawing.Point(23, 10);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.PlaceholderText = "Почта";
-            this.textBoxEmail.Size = new System.Drawing.Size(360, 32);
+            this.textBoxEmail.Size = new System.Drawing.Size(360, 45);
             this.textBoxEmail.TabIndex = 2;
             // 
             // linkForgotPassword
@@ -171,6 +177,17 @@ namespace NTI_APP
             this.linkForgotPassword.VisitedLinkColor = System.Drawing.Color.Black;
             this.linkForgotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkWastePassword_LinkClicked);
             // 
+            // labelError
+            // 
+            this.labelError.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.labelError, 2);
+            this.labelError.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelError.ForeColor = System.Drawing.Color.Firebrick;
+            this.labelError.Location = new System.Drawing.Point(3, 290);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(418, 80);
+            this.labelError.TabIndex = 5;
+            // 
             // PageRegistration
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -179,7 +196,7 @@ namespace NTI_APP
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "PageRegistration";
-            this.Size = new System.Drawing.Size(424, 290);
+            this.Size = new System.Drawing.Size(424, 370);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -203,5 +220,6 @@ namespace NTI_APP
         private System.Windows.Forms.LinkLabel linkForgotPassword;
 
         public System.Windows.Forms.LinkLabelLinkClickedEventHandler LoginLinkClicked;
+        private System.Windows.Forms.Label labelError;
     }
 }

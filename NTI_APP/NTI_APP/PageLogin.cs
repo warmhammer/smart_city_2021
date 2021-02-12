@@ -56,9 +56,6 @@ namespace NTI_APP
             string sql = "SELECT `password` from user where email =" + email;
             MySqlCommand command = new MySqlCommand (sql, conn);
 
-        
-            
-
             string pass;
 
             if (command.ExecuteScalar() != null)
@@ -68,11 +65,16 @@ namespace NTI_APP
                 {
                     EnterSuccess.Invoke(sender, e);
                 }
+                else
+                {
+                    string error = "wrong password";
+                    labelError.Text = error;
+                }
             }
-            if (command.ExecuteScalar() == null)
+            else
             {
                 string error = "email doesn't exist";
-                return;            
+                labelError.Text = error;
             }
         }
     }
