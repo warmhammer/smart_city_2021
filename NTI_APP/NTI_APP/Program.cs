@@ -25,7 +25,11 @@ namespace NTI_APP
             //string connStr = "server=localhost;user=root;database=baumancitydb;password=123;";
             //MySqlConnection conn = new MySqlConnection(connStr);
 
+
+      
+
             conn.Open();
+
 
             ProcessStartInfo procInfo = new ProcessStartInfo(@"C:/Program Files (x86)/Real Games/Factory IO/Factory IO.exe");
             procInfo.UseShellExecute = true;

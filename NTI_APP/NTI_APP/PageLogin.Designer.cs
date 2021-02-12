@@ -131,7 +131,10 @@ namespace NTI_APP
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.PlaceholderText = "Пароль";
-            this.textBoxPassword.Size = new System.Drawing.Size(360, 26);
+
+            this.textBoxPassword.Size = new System.Drawing.Size(360, 32);
+
+ 
             this.textBoxPassword.TabIndex = 1;
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
@@ -174,7 +177,11 @@ namespace NTI_APP
             this.textBoxEmail.Location = new System.Drawing.Point(23, 10);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.PlaceholderText = "Почта";
-            this.textBoxEmail.Size = new System.Drawing.Size(360, 26);
+
+            this.textBoxEmail.Size = new System.Drawing.Size(360, 32);
+
+       
+
             this.textBoxEmail.TabIndex = 2;
             // 
             // linkForgotPassword

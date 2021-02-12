@@ -71,10 +71,10 @@ namespace NTI_APP
             this.MainConteiners.SetColumnSpan(this.textBox3, 2);
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(125, 219);
+            this.textBox3.Location = new System.Drawing.Point(125, 188);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(1648, 38);
+            this.textBox3.Size = new System.Drawing.Size(1648, 27);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "На данном сайте представлено пример того, как можно автоматизировать ваш склад и " +
     "сэкономить на этом ваши деньги";
@@ -85,10 +85,10 @@ namespace NTI_APP
             this.MainConteiners.SetColumnSpan(this.textBox2, 2);
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(125, 156);
+            this.textBox2.Location = new System.Drawing.Point(125, 138);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1648, 45);
+            this.textBox2.Size = new System.Drawing.Size(1648, 32);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Автоматизированное складское помещение без использования человеческих ресурсов уж" +
     "е на вашем производстве";
@@ -103,7 +103,7 @@ namespace NTI_APP
             this.textBox1.Location = new System.Drawing.Point(125, 70);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 70, 3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1648, 63);
+            this.textBox1.Size = new System.Drawing.Size(1648, 45);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "ООО “Современные технологии автоматизации”";
             // 
@@ -158,7 +158,7 @@ namespace NTI_APP
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(125, 300);
+            this.splitContainer1.Location = new System.Drawing.Point(125, 258);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 40, 3, 3);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -198,7 +198,7 @@ namespace NTI_APP
             this.linkLabel1.Location = new System.Drawing.Point(22, 49);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(430, 38);
+            this.linkLabel1.Size = new System.Drawing.Size(309, 28);
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Посмотреть видео о разработке";
@@ -221,7 +221,7 @@ namespace NTI_APP
             this.tableLayoutPanel1.Controls.Add(this.comboBox3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.comboBox5, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 4, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(125, 522);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(125, 480);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 50, 3, 50);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -245,7 +245,7 @@ namespace NTI_APP
             this.comboBox1.Location = new System.Drawing.Point(13, 30);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(321, 44);
+            this.comboBox1.Size = new System.Drawing.Size(321, 33);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.Text = "Ваш город";
             // 
@@ -260,7 +260,7 @@ namespace NTI_APP
             this.comboBox2.Location = new System.Drawing.Point(340, 30);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(321, 44);
+            this.comboBox2.Size = new System.Drawing.Size(321, 33);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.Text = "Название организации";
             // 
@@ -278,7 +278,7 @@ namespace NTI_APP
             this.comboBox3.Location = new System.Drawing.Point(667, 30);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(321, 44);
+            this.comboBox3.Size = new System.Drawing.Size(321, 33);
             this.comboBox3.TabIndex = 2;
             this.comboBox3.Text = "Размеры вашего склада";
             // 
@@ -291,7 +291,7 @@ namespace NTI_APP
             this.comboBox5.Location = new System.Drawing.Point(994, 30);
             this.comboBox5.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(321, 44);
+            this.comboBox5.Size = new System.Drawing.Size(321, 33);
             this.comboBox5.TabIndex = 4;
             this.comboBox5.Text = "Тел. или E-mail";
             // 
@@ -322,7 +322,7 @@ namespace NTI_APP
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.KnowButton, 0, 3);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 776);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 734);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
@@ -341,7 +341,7 @@ namespace NTI_APP
             this.textBox5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBox5.Location = new System.Drawing.Point(3, 3);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(818, 80);
+            this.textBox5.Size = new System.Drawing.Size(818, 57);
             this.textBox5.TabIndex = 0;
             this.textBox5.Text = "О НАС";
             // 
@@ -363,10 +363,10 @@ namespace NTI_APP
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(3, 106);
+            this.label1.Location = new System.Drawing.Point(3, 83);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(818, 138);
+            this.label1.Size = new System.Drawing.Size(818, 64);
             this.label1.TabIndex = 5;
             this.label1.Text = "Наша компания работает на рынке автоматизации с 2006 года. Мы автоматизировали бо" +
     "льше 150 производственных предприятий.";
@@ -376,10 +376,10 @@ namespace NTI_APP
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(3, 304);
+            this.label2.Location = new System.Drawing.Point(3, 207);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 60, 3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(818, 184);
+            this.label2.Size = new System.Drawing.Size(818, 96);
             this.label2.TabIndex = 6;
             this.label2.Text = "Более 60% клиентов к нам обращаются повторно с другими задачами автоматизации. Гл" +
     "авным нашим подразделением является автоматизация складских помещений по типу ко" +
@@ -395,7 +395,7 @@ namespace NTI_APP
             this.KnowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.KnowButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.KnowButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.KnowButton.Location = new System.Drawing.Point(3, 587);
+            this.KnowButton.Location = new System.Drawing.Point(3, 494);
             this.KnowButton.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.KnowButton.Name = "KnowButton";
             this.KnowButton.Size = new System.Drawing.Size(263, 98);
@@ -408,7 +408,7 @@ namespace NTI_APP
             // 
             this.textBox4.Location = new System.Drawing.Point(0, 0);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 35);
+            this.textBox4.Size = new System.Drawing.Size(100, 27);
             this.textBox4.TabIndex = 0;
             this.textBox4.Text = "textBox4";
             // 

@@ -24,7 +24,7 @@ namespace NTI_APP
             this.pageLogin.EnterSuccess += new System.EventHandler(this.pageLoginEnterSuccess);
             this.pageAccount = new PageAccount();
 
-            this.pageRegistration = new PageRegistration();
+            this.pageRegistration = new PageRegistration(conn);
             this.pageRegistration.LoginLinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.pageRegistrationLogin_Click);
 
 
