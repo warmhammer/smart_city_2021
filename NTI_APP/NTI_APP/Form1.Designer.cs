@@ -74,7 +74,7 @@ namespace NTI_APP
             this.menuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip.Location = new System.Drawing.Point(9, 9);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(776, 38);
+            this.menuStrip.Size = new System.Drawing.Size(568, 28);
             this.menuStrip.TabIndex = 3;
             this.menuStrip.Text = "menuStrip2";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
@@ -83,44 +83,44 @@ namespace NTI_APP
             // 
             this.toolStripMenuItemMain.CheckOnClick = true;
             this.toolStripMenuItemMain.Name = "toolStripMenuItemMain";
-            this.toolStripMenuItemMain.Size = new System.Drawing.Size(108, 34);
+            this.toolStripMenuItemMain.Size = new System.Drawing.Size(79, 24);
             this.toolStripMenuItemMain.Text = "Главная";
             // 
             // toolStripMenuItemAccount
             // 
             this.toolStripMenuItemAccount.Name = "toolStripMenuItemAccount";
-            this.toolStripMenuItemAccount.Size = new System.Drawing.Size(191, 34);
+            this.toolStripMenuItemAccount.Size = new System.Drawing.Size(139, 24);
             this.toolStripMenuItemAccount.Text = "Личный кабинет";
             // 
             // toolStripMenuItemStorage
             // 
             this.toolStripMenuItemStorage.Name = "toolStripMenuItemStorage";
-            this.toolStripMenuItemStorage.Size = new System.Drawing.Size(87, 34);
+            this.toolStripMenuItemStorage.Size = new System.Drawing.Size(63, 24);
             this.toolStripMenuItemStorage.Text = "Склад";
             // 
             // toolStripMenuItemTimetable
             // 
             this.toolStripMenuItemTimetable.Name = "toolStripMenuItemTimetable";
-            this.toolStripMenuItemTimetable.Size = new System.Drawing.Size(144, 34);
+            this.toolStripMenuItemTimetable.Size = new System.Drawing.Size(105, 24);
             this.toolStripMenuItemTimetable.Text = "Расписание";
             // 
             // toolStripMenuItemVideo
             // 
             this.toolStripMenuItemVideo.Name = "toolStripMenuItemVideo";
-            this.toolStripMenuItemVideo.Size = new System.Drawing.Size(152, 34);
+            this.toolStripMenuItemVideo.Size = new System.Drawing.Size(112, 24);
             this.toolStripMenuItemVideo.Text = "Видео-поток";
             // 
             // toolStripMenuItemAbout
             // 
             this.toolStripMenuItemAbout.Name = "toolStripMenuItemAbout";
-            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(86, 34);
+            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(62, 24);
             this.toolStripMenuItemAbout.Text = "О нас";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1808, 0);
+            this.panel2.Location = new System.Drawing.Point(1717, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(207, 53);
             this.panel2.TabIndex = 4;
@@ -142,7 +142,7 @@ namespace NTI_APP
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(2015, 53);
+            this.panelHeader.Size = new System.Drawing.Size(1924, 53);
             this.panelHeader.TabIndex = 2;
             this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -164,7 +164,7 @@ namespace NTI_APP
             this.panel1.Location = new System.Drawing.Point(3, 30);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2009, 0);
+            this.panel1.Size = new System.Drawing.Size(1918, 0);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanelPagePlace
@@ -184,7 +184,7 @@ namespace NTI_APP
             this.tableLayoutPanelPagePlace.RowCount = 1;
             this.tableLayoutPanelPagePlace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelPagePlace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelPagePlace.Size = new System.Drawing.Size(2015, 868);
+            this.tableLayoutPanelPagePlace.Size = new System.Drawing.Size(1924, 868);
             this.tableLayoutPanelPagePlace.TabIndex = 3;
             this.tableLayoutPanelPagePlace.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanelPagePlace_Paint_1);
             // 
@@ -192,7 +192,7 @@ namespace NTI_APP
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(2015, 921);
+            this.ClientSize = new System.Drawing.Size(1924, 921);
             this.Controls.Add(this.tableLayoutPanelPagePlace);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.groupBox1);
