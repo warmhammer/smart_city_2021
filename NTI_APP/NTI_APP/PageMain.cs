@@ -17,6 +17,8 @@ namespace NTI_APP
         public PageMain()
         {
             InitializeComponent();
+            
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -102,5 +104,20 @@ namespace NTI_APP
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (timerCounter >= images.Length)
+            {
+                timerCounter = 0;
+            }
+
+            this.SliderBox1MainPage.BackgroundImage =images[timerCounter] ;
+
+            timerCounter++;
+
+        }
+
+   
     }
 }

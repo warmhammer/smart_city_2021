@@ -1,4 +1,6 @@
 ﻿
+using System.Drawing;
+
 namespace NTI_APP
 {
     partial class PageMain
@@ -29,6 +31,7 @@ namespace NTI_APP
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageMain));
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,12 +46,23 @@ namespace NTI_APP
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.SliderBox1MainPage = new System.Windows.Forms.PictureBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.MainConteiners.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SliderBox1MainPage)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
@@ -107,6 +121,7 @@ namespace NTI_APP
             this.MainConteiners.Controls.Add(this.textBox3, 1, 2);
             this.MainConteiners.Controls.Add(this.splitContainer1, 1, 3);
             this.MainConteiners.Controls.Add(this.tableLayoutPanel1, 1, 4);
+            this.MainConteiners.Controls.Add(this.tableLayoutPanel2, 1, 5);
             this.MainConteiners.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainConteiners.Location = new System.Drawing.Point(0, 0);
             this.MainConteiners.Name = "MainConteiners";
@@ -160,6 +175,7 @@ namespace NTI_APP
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.FlatAppearance.BorderSize = 0;
@@ -168,7 +184,7 @@ namespace NTI_APP
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // linkLabel1
             // 
@@ -190,6 +206,7 @@ namespace NTI_APP
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tableLayoutPanel1.ColumnCount = 5;
             this.MainConteiners.SetColumnSpan(this.tableLayoutPanel1, 2);
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -204,8 +221,9 @@ namespace NTI_APP
             this.tableLayoutPanel1.Controls.Add(this.button2, 4, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(125, 347);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 50, 3, 50);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1648, 100);
@@ -215,38 +233,62 @@ namespace NTI_APP
             // comboBox1
             // 
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 3);
+            this.comboBox1.Items.AddRange(new object[] {
+            "Москва",
+            "Санкт-Петербург",
+            "Козельск",
+            "Воркута"});
+            this.comboBox1.Location = new System.Drawing.Point(3, 23);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(323, 23);
+            this.comboBox1.Size = new System.Drawing.Size(323, 28);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.Text = "Ваш город";
             // 
             // comboBox2
             // 
             this.comboBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(332, 3);
+            this.comboBox2.Items.AddRange(new object[] {
+            "ООО \"Амазония\""});
+            this.comboBox2.Location = new System.Drawing.Point(332, 23);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(323, 23);
+            this.comboBox2.Size = new System.Drawing.Size(323, 28);
             this.comboBox2.TabIndex = 1;
+            this.comboBox2.Text = "Название организации";
             // 
             // comboBox3
             // 
             this.comboBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox3.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(661, 3);
+            this.comboBox3.Items.AddRange(new object[] {
+            "2 Га",
+            "4 Га",
+            "5 Га",
+            "8 Га"});
+            this.comboBox3.Location = new System.Drawing.Point(661, 23);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(323, 23);
+            this.comboBox3.Size = new System.Drawing.Size(323, 28);
             this.comboBox3.TabIndex = 2;
+            this.comboBox3.Text = "Размеры вашего склада";
             // 
             // comboBox5
             // 
             this.comboBox5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox5.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(990, 3);
+            this.comboBox5.Location = new System.Drawing.Point(990, 23);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(323, 23);
+            this.comboBox5.Size = new System.Drawing.Size(323, 28);
             this.comboBox5.TabIndex = 4;
+            this.comboBox5.Text = "Как с вами связаться (тел. или E-mail)";
             // 
             // button2
             // 
@@ -254,12 +296,123 @@ namespace NTI_APP
             this.button2.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(1416, 19);
+            this.button2.Location = new System.Drawing.Point(1411, 40);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 62);
+            this.button2.Size = new System.Drawing.Size(142, 40);
             this.button2.TabIndex = 5;
             this.button2.Text = "Отправить";
             this.button2.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.AutoSize = true;
+            this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.MainConteiners.SetColumnSpan(this.tableLayoutPanel2, 2);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.textBox5, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textBox6, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textBox7, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.button3, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.SliderBox1MainPage, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 547);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1648, 276);
+            this.tableLayoutPanel2.TabIndex = 7;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox5.Location = new System.Drawing.Point(3, 3);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(818, 36);
+            this.textBox5.TabIndex = 0;
+            this.textBox5.Text = "О НАС";
+            // 
+            // textBox6
+            // 
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox6.Location = new System.Drawing.Point(3, 45);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(818, 51);
+            this.textBox6.TabIndex = 1;
+            this.textBox6.Text = "Наша компания работает на рынке автоматизации с 2006 года. Мы автоматизировали бо" +
+    "льше 150 производственных предприятий.";
+            // 
+            // textBox7
+            // 
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox7.Location = new System.Drawing.Point(3, 109);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(818, 52);
+            this.textBox7.TabIndex = 2;
+            this.textBox7.Text = "Более 60% клиентов к нам обращаются повторно с другими задачами автоматизации. Гл" +
+    "авным нашим подразделением является автоматизация складских помещений по типу ко" +
+    "мпании Amazon";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.button3.Location = new System.Drawing.Point(3, 214);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(190, 59);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Узнать больше";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // SliderBox1MainPage
+            // 
+            this.SliderBox1MainPage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SliderBox1MainPage.BackgroundImage")));
+            this.SliderBox1MainPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SliderBox1MainPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SliderBox1MainPage.Location = new System.Drawing.Point(827, 3);
+            this.SliderBox1MainPage.Name = "SliderBox1MainPage";
+            this.tableLayoutPanel2.SetRowSpan(this.SliderBox1MainPage, 4);
+            this.SliderBox1MainPage.Size = new System.Drawing.Size(818, 270);
+            this.SliderBox1MainPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.SliderBox1MainPage.TabIndex = 4;
+            this.SliderBox1MainPage.TabStop = false;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(0, 0);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 23);
+            this.textBox4.TabIndex = 0;
+            this.textBox4.Text = "textBox4";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // PageMain
             // 
@@ -278,6 +431,9 @@ namespace NTI_APP
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SliderBox1MainPage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +453,17 @@ namespace NTI_APP
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox SliderBox1MainPage;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Timer timer1;
+        Image[] images = new Image[] { Properties.Resources.Slide1, Properties.Resources.Slide2, Properties.Resources.Slide3, Properties.Resources.Slide4 };
+        private int timerCounter = 0;
+
     }
 }
