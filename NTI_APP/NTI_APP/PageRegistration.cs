@@ -74,36 +74,46 @@ namespace NTI_APP
 
             if (points == 0)
             {
-                string sql0 = "SELECT MAX(id) FROM user";
-                MySqlCommand command0 = new MySqlCommand(sql0, conn);
-                string maxid = command0.ExecuteScalar().ToString();
-
-                int ID = Convert.ToInt32(maxid);
-                ID++;
-                String newID = (ID).ToString();
-
-
-                //Insert a user data
-                string v1 = newID; //ID
-                string v2 = "0"; //ADMIN FLAG
-                string v3 = "'user" + newID + "'";//username
-                string v4 = email;//usermail
-                string v5 = "'"+password+"'"; //password
-                string v6 = "000000"; //mailcode
-                string sql = "Insert into user values (" + v1 + "," + v2 + "," + v3 + "," + v4 + "," + v5 + "," + v6 + ");";
+                
+                string sql = "SELECT 'ID' FROM user WHERE email =" + email ;
                 MySqlCommand command = new MySqlCommand(sql, conn);
-                command.ExecuteNonQuery();
+                if (command.ExecuteScalar() == null)
+                {
+                    string sql0 = "SELECT MAX(id) FROM user";
+                    MySqlCommand command0 = new MySqlCommand(sql0, conn);
+                    string maxid = command0.ExecuteScalar().ToString();
 
-                RegistrationSuccess.Invoke(sender, e);
+                    int ID = Convert.ToInt32(maxid);
+                    ID++;
+                    String newID = (ID).ToString();
 
 
-                //int  = rnd.Next(1000, 9999);
-                ////////updating a mailcode using email ///NEEDTO DEBAG
-                ////string usermail = "'nik.trashko@gmail.com';";
-                ////string newmailcode = "7777";
-                ////string sql = "UPDATE user SET `mailcode` =" + newmailcode + " WHERE `email`=" + usermail;
-                ////MySqlCommand command = new MySqlCommand(sql, conn);
-                ////command.ExecutelionQuery();
+                    //Insert a user data
+                    string v1 = newID; //ID
+                    string v2 = "0"; //ADMIN FLAG
+                    string v3 = "'user" + newID + "'";//username
+                    string v4 = email;//usermail
+                    string v5 = "'" + password + "'"; //password
+                    string v6 = "000000"; //mailcode
+                    string sql2 = "Insert into user values (" + v1 + "," + v2 + "," + v3 + "," + v4 + "," + v5 + "," + v6 + ");";
+                    MySqlCommand command2 = new MySqlCommand(sql2, conn);
+                    command2.ExecuteNonQuery();
+
+                    RegistrationSuccess.Invoke(sender, e);
+
+
+                    //int  = rnd.Next(1000, 9999);
+                    ////////updating a mailcode using email ///NEEDTO DEBAG
+                    ////string usermail = "'nik.trashko@gmail.com';";
+                    ////string newmailcode = "7777";
+                    ////string sql = "UPDATE user SET `mailcode` =" + newmailcode + " WHERE `email`=" + usermail;
+                    ////MySqlCommand command = new MySqlCommand(sql, conn);
+                    ////command.ExecutelionQuery();
+                }
+                else
+                {
+                    labelError.Text = "User is already registreted";
+                }
             }
             else
             {
