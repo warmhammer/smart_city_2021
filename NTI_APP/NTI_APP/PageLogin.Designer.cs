@@ -247,6 +247,7 @@ namespace NTI_APP
 
         public System.Windows.Forms.LinkLabelLinkClickedEventHandler RegistrationLinkClicked;
         public System.EventHandler EnterSuccess;
+        public pageAuth auth;
 
 
         private MySqlConnection conn;

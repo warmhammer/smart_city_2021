@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
+using System.Net.Mail;
+using System.Net;
 
 namespace NTI_APP
 {
@@ -37,7 +40,14 @@ namespace NTI_APP
 
         private void EnteryButton_Click(object sender, EventArgs e)
         {
-            string email = "'" + textBoxEmail.Text + "'";
+            string email = textBoxEmail.Text;
+            if (!isEmail(email))
+            {
+                string error = "Wrong e-mail";
+                labelError.Text = error;
+                return;
+            }
+
             string password = textBoxPassword.Text;
 
 
@@ -74,8 +84,7 @@ namespace NTI_APP
 
             if (points == 0)
             {
-                
-                string sql = "SELECT 'ID' FROM user WHERE email =" + email ;
+                string sql = "SELECT 'ID' FROM user WHERE email =" + "'" + email + "'";
                 MySqlCommand command = new MySqlCommand(sql, conn);
                 if (command.ExecuteScalar() == null)
                 {
@@ -92,23 +101,15 @@ namespace NTI_APP
                     string v1 = newID; //ID
                     string v2 = "0"; //ADMIN FLAG
                     string v3 = "'user" + newID + "'";//username
-                    string v4 = email;//usermail
+                    string v4 = "'" + email + "'";//usermail
                     string v5 = "'" + password + "'"; //password
                     string v6 = "000000"; //mailcode
                     string sql2 = "Insert into user values (" + v1 + "," + v2 + "," + v3 + "," + v4 + "," + v5 + "," + v6 + ");";
                     MySqlCommand command2 = new MySqlCommand(sql2, conn);
                     command2.ExecuteNonQuery();
 
+                    sendEmail(email);
                     RegistrationSuccess.Invoke(sender, e);
-
-
-                    //int  = rnd.Next(1000, 9999);
-                    ////////updating a mailcode using email ///NEEDTO DEBAG
-                    ////string usermail = "'nik.trashko@gmail.com';";
-                    ////string newmailcode = "7777";
-                    ////string sql = "UPDATE user SET `mailcode` =" + newmailcode + " WHERE `email`=" + usermail;
-                    ////MySqlCommand command = new MySqlCommand(sql, conn);
-                    ////command.ExecutelionQuery();
                 }
                 else
                 {
@@ -119,16 +120,32 @@ namespace NTI_APP
             {
                 labelError.Text = errorMessage;
             }
-    
-
-
+        }
+       
+        private bool isEmail(string email)
+        {
+            string pattern = "[.\\-_a-z0-9]+@([a-z0-9][\\-a-z0-9]+\\.)+[a-z]{2,6}";
+            Match isMatch = Regex.Match(email.ToLower(), pattern, RegexOptions.IgnoreCase);
+            return isMatch.Success;
         }
 
-
-
-
-
-
-        
+        private void sendEmail(string email)
+        { 
+            MailMessage mail = new MailMessage();
+            mail.From = new MailAddress("gnosepetro@yandex.ru", "Система умного предприятия");
+            mail.To.Add(new MailAddress(email));
+            // тема письма
+            mail.Subject = "Успешная регистрация";
+            // текст письма
+            mail.Body = "<h2>Здравствуйте! Пользователь с вашей почтой успешно зарегистрировался в системе умного предприятия</h2>";
+            // письмо представляет код html
+            mail.IsBodyHtml = true;
+            // адрес smtp-сервера и порт, с которого будем отправлять письмо
+            SmtpClient smtp = new SmtpClient("smtp.yandex.ru", 25);
+            // логин и пароль
+            smtp.Credentials = new NetworkCredential("gnosepetro@yandex.ru", "ndhzarxnucrqojeu");
+            smtp.EnableSsl = true;
+            smtp.Send(mail);
+        }
     }
 }

@@ -47,13 +47,12 @@ namespace NTI_APP
 
         private void EnteryButton_Click(object sender, EventArgs e)
         {
-            
-            string email ="'" + textBoxEmail.Text + "'";
+            string email = textBoxEmail.Text;
             string password =  textBoxPassword.Text ;
 
             
 
-            string sql = "SELECT `password` from user where email =" + email;
+            string sql = "SELECT `password` from user where email =" + "'" + email + "'";
             MySqlCommand command = new MySqlCommand (sql, conn);
 
             string pass;
@@ -63,19 +62,21 @@ namespace NTI_APP
                pass = command.ExecuteScalar().ToString();
                 if (pass == password)
                 {
+                    auth = new pageAuth(email);
                     EnterSuccess.Invoke(sender, e);
                 }
                 else
                 {
-                    string error = "wrong password";
+                    string error = "Wrong password";
                     labelError.Text = error;
                 }
             }
             else
             {
-                string error = "email doesn't exist";
+                string error = "E-mail doesn't exist";
                 labelError.Text = error;
             }
         }
+
     }
 }

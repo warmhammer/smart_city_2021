@@ -113,7 +113,16 @@ namespace NTI_APP
 
         private void pageLoginEnterSuccess(object sender, EventArgs e)
         {
-            loginFlag = true; 
+            this.tableLayoutPanelPagePlace.Controls.Clear();
+            this.pageLogin.auth.Dock = System.Windows.Forms.DockStyle.None;
+            this.pageLogin.auth.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanelPagePlace.Controls.Add(this.pageLogin.auth, 0, 0);
+
+            this.pageLogin.auth.authSuccess += new System.EventHandler(this.loginSuccess);
+        }
+        private void loginSuccess(object sender, EventArgs e)
+        {
+            loginFlag = true;
 
             this.tableLayoutPanelPagePlace.Controls.Clear();
             this.pageAccount.Dock = System.Windows.Forms.DockStyle.None;
