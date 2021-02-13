@@ -63,6 +63,26 @@ namespace NTI_APP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aboutLabelBack {
+            get {
+                object obj = ResourceManager.GetObject("aboutLabelBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blueButton2 {
+            get {
+                object obj = ResourceManager.GetObject("blueButton2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boxes {
             get {
                 object obj = ResourceManager.GetObject("boxes", resourceCulture);

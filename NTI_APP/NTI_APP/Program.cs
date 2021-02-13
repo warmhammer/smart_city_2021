@@ -33,7 +33,8 @@ namespace NTI_APP
 
             ProcessStartInfo procInfo = new ProcessStartInfo(@"C:/Program Files (x86)/Real Games/Factory IO/Factory IO.exe");
             procInfo.UseShellExecute = true;
-            procInfo.FileName = "C:/Program Files (x86)/Real Games/Factory IO/Scenes/Automated Warehouse.factoryio";
+            //procInfo.FileName = "C:/Program Files (x86)/Real Games/Factory IO/Scenes/Automated Warehouse.factoryio";
+            procInfo.FileName = "C:/Users/maxpo/source/repos/warmhammer/smart_city_2021/FactoryIO/WarehouseNTI.factoryio";
 
 
             System.Diagnostics.Process factoryIOProcess = null;
