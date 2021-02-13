@@ -122,5 +122,10 @@ namespace NTI_APP
         {
             this.KnoweledgeMore.Invoke(sender,e);
         }
+
+        private void SliderBox1MainPage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

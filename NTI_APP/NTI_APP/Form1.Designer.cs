@@ -73,7 +73,7 @@ namespace NTI_APP
             this.menuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip.Location = new System.Drawing.Point(9, 9);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(776, 38);
+            this.menuStrip.Size = new System.Drawing.Size(568, 28);
             this.menuStrip.TabIndex = 3;
             this.menuStrip.Text = "menuStrip2";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
@@ -82,37 +82,37 @@ namespace NTI_APP
             // 
             this.toolStripMenuItemMain.CheckOnClick = true;
             this.toolStripMenuItemMain.Name = "toolStripMenuItemMain";
-            this.toolStripMenuItemMain.Size = new System.Drawing.Size(108, 34);
+            this.toolStripMenuItemMain.Size = new System.Drawing.Size(79, 24);
             this.toolStripMenuItemMain.Text = "Главная";
             // 
             // toolStripMenuItemAccount
             // 
             this.toolStripMenuItemAccount.Name = "toolStripMenuItemAccount";
-            this.toolStripMenuItemAccount.Size = new System.Drawing.Size(191, 34);
+            this.toolStripMenuItemAccount.Size = new System.Drawing.Size(139, 24);
             this.toolStripMenuItemAccount.Text = "Личный кабинет";
             // 
             // toolStripMenuItemStorage
             // 
             this.toolStripMenuItemStorage.Name = "toolStripMenuItemStorage";
-            this.toolStripMenuItemStorage.Size = new System.Drawing.Size(87, 34);
+            this.toolStripMenuItemStorage.Size = new System.Drawing.Size(63, 24);
             this.toolStripMenuItemStorage.Text = "Склад";
             // 
             // toolStripMenuItemTimetable
             // 
             this.toolStripMenuItemTimetable.Name = "toolStripMenuItemTimetable";
-            this.toolStripMenuItemTimetable.Size = new System.Drawing.Size(144, 34);
+            this.toolStripMenuItemTimetable.Size = new System.Drawing.Size(105, 24);
             this.toolStripMenuItemTimetable.Text = "Расписание";
             // 
             // toolStripMenuItemVideo
             // 
             this.toolStripMenuItemVideo.Name = "toolStripMenuItemVideo";
-            this.toolStripMenuItemVideo.Size = new System.Drawing.Size(152, 34);
+            this.toolStripMenuItemVideo.Size = new System.Drawing.Size(112, 24);
             this.toolStripMenuItemVideo.Text = "Видео-поток";
             // 
             // toolStripMenuItemAbout
             // 
             this.toolStripMenuItemAbout.Name = "toolStripMenuItemAbout";
-            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(86, 34);
+            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(62, 24);
             this.toolStripMenuItemAbout.Text = "О нас";
             // 
             // panel2

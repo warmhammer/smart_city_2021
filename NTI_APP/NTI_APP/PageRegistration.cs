@@ -45,19 +45,25 @@ namespace NTI_APP
 
             int points = 0;
 
-            if (password.Length < 8)
+            if (password.Length < 8 )
             {
                 errorMessage += "Меньше 8-ми символов/"; 
                 points++;
             }
+            if (password.Length > 20)
+            {
+                errorMessage += "Больше 20-ти символов/";
+                points++;
+            }
+
             if (!password.Any(c => char.IsUpper(c)))
             {
-                errorMessage += "отсутствуют заглавные буквы/";
+                errorMessage += "Отсутствуют заглавные буквы/";
                 points++;
             }
             if (!password.Any(c => char.IsDigit(c)))
             {
-                errorMessage += "отстутствуют цифры/"; 
+                errorMessage += "Отстутствуют цифры/"; 
                 points++;
             }
             if (!password.Any(c => char.IsPunctuation(c)))
